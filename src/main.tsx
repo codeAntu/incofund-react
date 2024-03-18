@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import Login from './screens/Login.tsx'
 import App from './App.tsx'
+import Register from './screens/Register.tsx'
+import Profile from './screens/Profile.tsx'
+import TaskSystem from './screens/TaskSystem.tsx'
+import Recharge from './screens/Recharge.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     {/* <App /> */}
-    <Login />
+    {/* <Login /> */}
+    {/* <Register /> */}
+    {/* <Profile /> */}
+    {/* <TaskSystem /> */}
+    <Recharge />
   </React.StrictMode>,
 )
