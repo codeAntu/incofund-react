@@ -19,7 +19,7 @@
     @apply min-h-[100dvh] p-5;
   }
   .maxWidth {
-    @apply mx-auto max-w-[400px];
+    @apply w-full max-w-[380px];
   }
   .header {
     @apply py-4 text-3xl font-semibold text-accent;
@@ -30,6 +30,9 @@
   .headerContainer {
     @apply flex items-center justify-between;
   }
+  .content {
+    @apply flex h-full flex-col justify-between;
+  }
 
   .flexCenter {
     @apply flex items-center justify-center;
@@ -39,6 +42,16 @@
   }
   .flexColCenter {
     @apply flexCenter flexCol items-center justify-center;
+  }
+
+  .contentHeader {
+    @apply text-[15px] font-semibold;
+  }
+  .contentText {
+    @apply text-sm font-medium text-black/40;
+  }
+  .card {
+    @apply flex flex-col gap-2 rounded-[14px] border-[1.5px] border-accent/80 bg-accent/5 p-5;
   }
 
   .recordCard {
@@ -100,44 +113,53 @@
   }
 
   .taskCard {
-    @apply flex flex-col gap-2 rounded-[14px] border-[1.5px] border-accent/80 bg-accent/5 p-4;
+    @apply flex flex-col gap-2 rounded-[14px] border-[1.5px] border-accent/80 bg-accent/5 p-5;
   }
-  .taskHeader {
+  /* .taskHeader {
     @apply text-[15px] font-semibold;
   }
+
   .taskContent {
     @apply text-xs font-medium text-black/40;
-  }
+  } */
+
   .taskBar {
-    @apply rounded-full bg-accent/80 py-1;
+    @apply rounded-full bg-accent py-1;
   }
   .taskBarText {
-    @apply text-xs font-medium text-accent/50;
+    @apply text-xs font-medium text-accent/70;
   }
   .taskStatus {
     @apply text-xs font-semibold text-accent/80;
   }
 
-  .radio-label {
+  .radio {
+    @apply p-0;
+  }
+
+  .radioHidden {
     @apply hidden;
   }
   .option {
     @apply rounded-xl border-[1.5px] border-accent/80 bg-accent/5 p-4 text-center text-sm font-semibold text-black/40;
   }
   .radio-label input:checked ~ .option {
-    @apply bg-accent text-white
+    @apply bg-accent text-white;
   }
-  
+
   .optionSelected {
-    @apply rounded-xl border-[1.5px] border-accent/80 p-4 text-center text-sm font-semibold text-white bg-accent;
+    @apply rounded-xl border-[1.5px] border-accent/80 bg-accent p-4 text-center text-sm font-semibold text-white;
   }
 
   .channel {
     @apply p-4 text-sm font-semibold text-black/40;
   }
-  .channelRadio {
-    @apply  p-0;
-  }
 
+  .level {
+    @apply w-[30%] rounded-full text-center border border-accent bg-accent/5 px-3 py-2 text-[15px] font-semibold text-accent;
+  }
+  .levelSelected {
+    @apply w-[30%] rounded-full text-center border border-accent bg-accent px-3 py-2 text-[15px] font-semibold text-white;
+  }
 
 }

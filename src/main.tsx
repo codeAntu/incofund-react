@@ -7,6 +7,9 @@ import Register from './screens/Register.tsx'
 import Profile from './screens/Profile.tsx'
 import TaskSystem from './screens/TaskSystem.tsx'
 import Recharge from './screens/Recharge.tsx'
+import Withdraw from './screens/Withdraw.tsx'
+import VIPLevel from './screens/VIPLevel.tsx'
+import MyTeam from './screens/MyTeam.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -15,6 +18,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <Register /> */}
     {/* <Profile /> */}
     {/* <TaskSystem /> */}
-    <Recharge />
+    {/* <Recharge /> */}
+    {/* <Withdraw /> */}
+    {/* <VIPLevel /> */}
+    <MyTeam />
   </React.StrictMode>,
 )
