@@ -1,6 +1,6 @@
 export default function MyTeam() {
   return (
-    <div className='component'>
+    <div className='component flex justify-center'>
       <div className='maxWidth flexCol gap-5 '>
         <div className='header'>My Team</div>
         <div className='flexCol gap-5'>
@@ -22,6 +22,7 @@ export default function MyTeam() {
         </div>
         <div className='py-10'>
           <img src='./icons/noInvitation.svg' alt='' className='' />
+          <div className='text-center text-sm font-semibold text-accent '>No Invitation Yet</div>
         </div>
       </div>
     </div>

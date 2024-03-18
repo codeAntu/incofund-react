@@ -10,6 +10,10 @@ import Recharge from './screens/Recharge.tsx'
 import Withdraw from './screens/Withdraw.tsx'
 import VIPLevel from './screens/VIPLevel.tsx'
 import MyTeam from './screens/MyTeam.tsx'
+import MyRecords from './screens/MyRecords.tsx'
+import MyCard from './screens/MyCard.tsx'
+import SplashScreen from './screens/SplashScreen.tsx'
+import Product from './screens/Product.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -21,6 +25,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <Recharge /> */}
     {/* <Withdraw /> */}
     {/* <VIPLevel /> */}
-    <MyTeam />
+    {/* <MyTeam /> */}
+    {/* <MyRecords /> */}
+    {/* <MyCard /> */}
+    {/* <SplashScreen /> */}
+    <Product />
   </React.StrictMode>,
 )

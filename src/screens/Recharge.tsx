@@ -13,37 +13,37 @@ export default function Recharge() {
           </div>
           <div className='flexCol gap-1'>
             <div className='inputText '>Quick Options</div>
-            <div className='grid grid-cols-4 gap-3'>
+            <div className='buttonRadio '>
+              <input type='radio' id='780' name='quick-opt' className='radioHidden' />
               <label htmlFor='780' className=''>
-                <input type='radio' id='780' name='quick-opt' className='radioHidden' />
                 <div className='option'>780</div>
               </label>
+              <input type='radio' id='2000' name='quick-opt' className='radioHidden' />
               <label htmlFor='2000' className=''>
-                <input type='radio' id='2000' name='quick-opt' className='radioHidden' />
                 <div className='option'>2000</div>
               </label>
+              <input type='radio' id='5000' name='quick-opt' className='radioHidden' />
               <label htmlFor='5000' className=''>
-                <input type='radio' id='5000' name='quick-opt' className='radioHidden' />
                 <div className='option'>5000</div>
               </label>
+              <input type='radio' id='10000' name='quick-opt' className='radioHidden' />
               <label htmlFor='10000' className=''>
-                <input type='radio' id='10000' name='quick-opt' className='radioHidden' />
                 <div className='option'>10000</div>
               </label>
+              <input type='radio' id='20000' name='quick-opt' className='radioHidden' />
               <label htmlFor='20000' className=''>
-                <input type='radio' id='20000' name='quick-opt' className='radioHidden' />
                 <div className='option'>20000</div>
               </label>
+              <input type='radio' id='30000' name='quick-opt' className='radioHidden' />
               <label htmlFor='30000' className=''>
-                <input type='radio' id='30000' name='quick-opt' className='radioHidden' />
-                <div className='optionSelected'>30000</div>
+                <div className='option'>30000</div>
               </label>
+              <input type='radio' id='40000' name='quick-opt' className='radioHidden' />
               <label htmlFor='40000' className=''>
-                <input type='radio' id='40000' name='quick-opt' className='radioHidden' />
                 <div className='option'>40000</div>
               </label>
+              <input type='radio' id='50000' name='quick-opt' className='radioHidden' />
               <label htmlFor='50000' className=''>
-                <input type='radio' id='50000' name='quick-opt' className='radioHidden' />
                 <div className='option'>50000</div>
               </label>
             </div>

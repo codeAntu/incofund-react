@@ -1,7 +1,7 @@
 export default function TaskSystem() {
   return (
     <div className='component flex justify-center'>
-      <div className='maxWidth flex w-full flex-col justify-center gap-16'>
+      <div className='maxWidth flex w-full flex-col gap-16'>
         <div className='headerContainer'>
           <div className='header'>Task System</div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
