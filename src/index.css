@@ -14,12 +14,21 @@
   font-family: 'Montserrat';
 }
 
+.popover {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  /* Add more styling as needed */
+}
+
 @layer components {
   .component {
-    @apply min-h-[100dvh] p-5;
+    @apply flex min-h-[100dvh] justify-center;
   }
   .maxWidth {
-    @apply w-full max-w-[380px];
+    @apply w-full max-w-[380px] p-5;
   }
   .header {
     @apply py-4 text-3xl font-semibold text-accent;
@@ -36,6 +45,9 @@
   .textAccent {
     @apply text-sm font-semibold text-accent;
   }
+  .subText {
+    @apply text-[13px] font-medium text-black/40;
+  }
 
   .flexCenter {
     @apply flex items-center justify-center;
@@ -45,6 +57,41 @@
   }
   .flexColCenter {
     @apply flexCenter flexCol items-center justify-center;
+  }
+
+  .inputBox {
+    @apply flex w-full items-center rounded-[14px] border-[1.5px] border-accent/80 bg-accent/5 px-3.5;
+  }
+  .input {
+    @apply w-full bg-transparent px-3 py-4 text-sm font-semibold text-black/80 outline-none;
+  }
+  .input::placeholder {
+    @apply text-black/30;
+  }
+  .inputIcon {
+    @apply w-[22px];
+  }
+  .inputText {
+    @apply text-sm font-semibold opacity-45;
+  }
+  .inputContainer {
+    @apply flex w-full flex-col gap-1;
+  }
+
+  .button {
+    @apply flex w-full items-center justify-center rounded-[14px] bg-accent py-3.5 text-sm font-semibold text-white;
+  }
+  .button2 {
+    @apply w-full rounded-[14px] border-[1.5px] border-accent bg-accent/5 p-3.5 text-sm font-semibold text-accent;
+  }
+  .buttonRounded {
+    @apply flexCenter gap-2 rounded-full border-[1.5px] border-accent bg-accent px-8 py-3 text-xs font-medium text-white;
+  }
+  .buttonRounded2 {
+    @apply flexCenter gap-2 rounded-full border-[1.5px] border-accent bg-accent/5 px-8 py-3 text-xs font-medium text-accent;
+  }
+  .buttonIcon {
+    @apply w-[18px];
   }
 
   .contentHeader {
@@ -84,35 +131,6 @@
   }
   .optionItemArrow {
     @apply w-2 opacity-80;
-  }
-
-  .inputBox {
-    @apply flex w-full items-center rounded-[14px] border-[1.5px] border-accent/80 bg-accent/5 px-3.5;
-  }
-  .input {
-    @apply w-full bg-transparent px-3 py-4 text-sm font-semibold text-black/80 outline-none;
-  }
-  .input::placeholder {
-    @apply text-black/30;
-  }
-  .inputIcon {
-    @apply w-[22px];
-  }
-  .inputText {
-    @apply text-sm font-semibold opacity-45;
-  }
-  .inputContainer {
-    @apply flex w-full flex-col gap-1;
-  }
-
-  .button {
-    @apply flex w-full items-center justify-center rounded-[14px] bg-accent py-3.5 text-sm font-semibold text-white;
-  }
-  .button2 {
-    @apply w-full rounded-[14px] border-[1.5px] border-accent bg-accent/5 p-3.5 text-sm font-semibold text-accent;
-  }
-  .buttonRounded {
-    @apply rounded-full bg-accent py-3 text-sm font-medium text-white;
   }
 
   .taskCard {
@@ -212,5 +230,88 @@
   }
   .productCardImg {
     @apply rounded-2xl;
+  }
+  .productHeader {
+    @apply text-xl font-semibold;
+  }
+
+  .mitraCard {
+    @apply flex gap-3 rounded-3xl bg-accent/5 p-4 pr-0;
+  }
+  .mitraHeader {
+    @apply text-lg font-semibold;
+  }
+  .mitraText {
+    @apply text-xs font-medium leading-tight text-black/80;
+  }
+  .mitraImgContainer {
+    @apply flexCol gap-3;
+  }
+
+  .walletCard {
+    @apply flexCol gap-5 rounded-3xl bg-black/5 p-4;
+  }
+
+  .inviteCard {
+    @apply flex gap-3 rounded-[14px] bg-accent p-4 text-sm font-semibold text-white;
+  }
+  .inviteCardBtn {
+    @apply rounded-full border border-white px-2 py-1 text-xs font-medium;
+  }
+  .inviteCardBt2 {
+    @apply rounded-full border bg-white px-4 py-2 font-medium text-accent;
+  }
+
+  .referCard {
+    @apply flexCol gap-4;
+  }
+  .referCardItem {
+    @apply flex items-center justify-between gap-3;
+  }
+  .referIcon {
+    @apply w-44 p-1;
+  }
+
+  .referText {
+    @apply text-sm font-semibold text-black/80;
+  }
+  .referIconRapper {
+    @apply w-[12%] rounded-full border-4 border-white shadow-lg;
+  }
+  .referTextContainer {
+    @apply w-[85%];
+  }
+
+  .nav {
+    @apply absolute bottom-0 left-0 flex w-full items-center justify-between bg-white;
+  }
+  .navIcon {
+    @apply w-6;
+  }
+  .navText {
+    @apply text-xs font-semibold text-black/40;
+  }
+  .navTextActive {
+    @apply text-xs font-semibold text-accent;
+  }
+  .navItem {
+    @apply flexCol flex-grow items-center justify-center gap-1 py-3;
+  }
+
+  .menu {
+    @apply flexCol absolute left-0 top-0 h-full w-9/12 justify-between bg-white px-5 py-8 pt-20;
+  }
+
+  .menuItems {
+    @apply flexCol gap-3;
+  }
+  .menuItem {
+    @apply flex items-center gap-3 p-3 text-sm font-semibold text-black/40 rounded-[14px];
+  }
+  .menuItemActive {
+    @apply flex items-center gap-3 border bg-accent p-3 text-sm font-semibold text-white rounded-[14px];
+  }
+  .menuItemIcon {
+    @apply w-5;
   }
 }

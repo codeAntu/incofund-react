@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link index.js -->
+    <script src="./index.js"></script>
+  </head>
+  <body class="bg-black/20">
+    <button popovertarget="joinTelegram">Join Telegram</button>
+
+    <div popover id="joinTelegram" class="w-10/12 bg-transparent">
+      <div class="flex flex-col items-center gap-8 rounded-3xl bg-white p-5">
+        <div class="flex flex-col items-center gap-1 text-center">
+          <img src="./icons/telegram.svg" alt="" class="aspect-square w-[65px]" />
+          <div class="text-sm font-semibold">Join our Telegram community</div>
+          <div class="text-xs font-semibold text-black/40">
+            Join our lively Telegram community for discussions and updates today!
+          </div>
+        </div>
+        <button
+          class="w-4/5 rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F] px-14 py-3 text-xs font-medium text-white"
+        >
+          Join
+        </button>
+      </div>
+    </div>
+
+    <button popovertarget="exchange">Open exchange</button>
+
+    <div popover id="exchange" class="w-10/12 bg-transparent">
+      <div class="flex flex-col items-center gap-8 rounded-3xl border bg-white px-7 py-5">
+        <div class="text-sm font-semibold">Exchange</div>
+        <div class="flex w-full flex-col items-center gap-3 text-center">
+          <div class="text-xs font-semibold text-black/40">Please enter a valid redemption code to redeem</div>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Input Redeem Code"
+            class="w-full rounded-2xl border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 p-3.5"
+          />
+        </div>
+        <div class="flex w-full flex-col items-center gap-3">
+          <button
+            class="w-4/5 rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-14 py-3 text-xs font-semibold text-[#FC5F0F]"
+          >
+            Cancel
+          </button>
+          <button
+            class="w-4/5 rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F] px-14 py-3 text-xs font-semibold text-white"
+          >
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button popovertarget="addBank">Add Bank</button>
+    <div popover id="addBank" class="h-full w-full bg-transparent">
+      <!-- <div popovertarget="addBank" popovertargetaction="hide" class="z-10 w-11 w-full bg-red-600"></div> -->
+      <div class="absolute bottom-0 left-0 flex w-full flex-col items-center gap-4 rounded-t-3xl border bg-white p-5">
+        <div class="w-full font-bold">Add New Bank Card</div>
+        <div class="flex w-full flex-col items-center gap-2.5">
+          <div class="flex w-full flex-col gap-0.5">
+            <div class="px-0.5 text-sm font-semibold text-black">Bank IFSC</div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your IFSC code"
+              class="w-full rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 p-3.5"
+            />
+          </div>
+          <div class="flex w-full flex-col gap-0.5">
+            <div class="px-0.5 text-sm font-semibold text-black">Card Holder Name</div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your Card Holder Name"
+              class="w-full rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 p-3.5"
+            />
+          </div>
+          <div class="flex w-full flex-col gap-0.5">
+            <div class="px-0.5 text-sm font-semibold text-black">Bank Account Number</div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your Bank Account Number"
+              class="w-full rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 p-3.5"
+            />
+          </div>
+          <div class="flex w-full flex-col gap-0.5">
+            <div class="px-0.5 text-sm font-semibold text-black">Bank Name</div>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your Bank Name"
+              class="w-full rounded-[14px] border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 p-3.5"
+            />
+          </div>
+        </div>
+        <div class="flex w-full items-center justify-center py-3">
+          <button
+            class="w-4/5 rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F] px-14 py-3 text-xs font-semibold text-white"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button popovertarget="mypopover" popovertargetaction="show">Show popover</button>
+    <button popovertarget="mypopover" popovertargetaction="hide">Hide popover</button>
+    <div id="mypopover" popover>Popover content</div>
+  </body>
+</html>
