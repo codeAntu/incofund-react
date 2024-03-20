@@ -11,7 +11,7 @@ export default function Refer() {
           <div className='referCard'>
             <div className='referCardItem'>
               <div className='referIconRapper'>
-                <img src='./icons/vip2.svg' alt='' className='referIcon' />
+                <img src='./icons/referIcon1.svg' alt='' className='referIcon' />
               </div>
               <div className='referTextContainer'>
                 <div className='contentHeader '>Direct Recommendation</div>
@@ -23,7 +23,7 @@ export default function Refer() {
             </div>
             <div className='referCardItem'>
               <div className='referIconRapper'>
-                <img src='./icons/vip2.svg' alt='' className='referIcon' />
+                <img src='./icons/referIcon2.svg' alt='' className='referIcon' />
               </div>
               <div className='referTextContainer'>
                 <div className='contentHeader'>Indirect Recommendation</div>
@@ -34,7 +34,7 @@ export default function Refer() {
             </div>
             <div className='referCardItem'>
               <div className='referIconRapper'>
-                <img src='./icons/vip2.svg' alt='' className='referIcon' />
+                <img src='./icons/referIcon3.svg' alt='' className='referIcon' />
               </div>
               <div className='referTextContainer'>
                 <div className='contentHeader'>Indirect Recommendation</div>

@@ -3,7 +3,9 @@ export default function Home() {
     <div className='component'>
       <div className='maxWidth flexCol gap-6'>
         <div className='headerContainer'>
-          <div className='header'>Task System</div>
+          <div className='header'>
+            <img src='./icons/appIcon.svg' alt='' className='w-20' />
+          </div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
         <div className='flexCol fixed bottom-3 right-3 justify-center gap-0 '>

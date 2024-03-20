@@ -3,7 +3,7 @@ export default function Product() {
     <div className='component flex justify-center  '>
       <div className='maxWidth flex flex-col gap-4'>
         <div className='headerContainer'>
-          <div className='header'>Task System</div>
+          <div className='header'>Product</div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
         <div className='flex gap-2 pt-2'>
@@ -14,7 +14,7 @@ export default function Product() {
         <div className='flexCol gap-3'>
           <div className='productCard'>
             <div className='productCardImgContainer'>
-              <img src='./icons/temp.png' alt=''className="productCardImg" />
+              <img src='./icons/temp.png' alt='' className='productCardImg' />
             </div>
             <div className='flexCol flex-grow justify-between '>
               <div className='productCardText'>Pic Automation</div>

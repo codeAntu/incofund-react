@@ -25,11 +25,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <App /> */}
     {/* <Login /> */}
     {/* <Register /> */}
-    {/* <Profile /> */}
+    {/* <Profile />  ----- */}
     {/* <TaskSystem /> */}
     {/* <Recharge /> */}
     {/* <Withdraw /> */}
-    {/* <VIPLevel /> */}
+    {/* <VIPLevel /> ---- */}
     {/* <MyTeam /> */}
     {/* <MyRecords /> */}
     {/* <MyCard /> */}
@@ -39,6 +39,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <Refer /> */}
     {/* <PopOver /> */}
     {/* <Nav /> */}
-    <Menu />
+    {/* <Menu /> */}
   </React.StrictMode>,
 )

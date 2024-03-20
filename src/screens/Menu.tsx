@@ -1,7 +1,7 @@
 export default function Menu() {
   return (
     <div className='component '>
-      <div className='maxWidth relative bg-black/30'>
+      <div className='maxWidth relative'>
         <div className='menu'>
           <div className='flexCol gap-10'>
             <div>
@@ -9,31 +9,31 @@ export default function Menu() {
             </div>
             <div className='menuItems'>
               <a className='menuItemActive'>
-                <img src='./icons/business.svg' alt='' className="menuItemIcon"/>
+                <img src='./icons/business.svg' alt='' className='menuItemIcon' />
                 <div>Our Business</div>
               </a>
               <a className='menuItem'>
-                <img src='./icons/messages.svg' alt='' className="menuItemIcon" />
+                <img src='./icons/messages.svg' alt='' className='menuItemIcon' />
                 <div>Messages</div>
               </a>
               <a className='menuItem'>
-                <img src='./icons/exchange.svg' alt='' className="menuItemIcon"/>
+                <img src='./icons/exchange.svg' alt='' className='menuItemIcon' />
                 <div>Exchange</div>
               </a>
               <a className='menuItem'>
-                <img src='./icons/task.svg' alt='' className="menuItemIcon"/>
+                <img src='./icons/task.svg' alt='' className='menuItemIcon' />
                 <div>Our Task</div>
               </a>
               <a className='menuItem'>
-                <img src='./icons/team.svg' alt='' className="menuItemIcon"/>
+                <img src='./icons/team.svg' alt='' className='menuItemIcon' />
                 <div>My Team</div>
               </a>
               <a className='menuItem'>
-                <img src='./icons/support.svg' alt=''className="menuItemIcon" />
+                <img src='./icons/support.svg' alt='' className='menuItemIcon' />
                 <div>24/7 Support</div>
               </a>
               <a className='menuItem'>
-                <img src='./icons/policy.svg' alt='' className="menuItemIcon" />
+                <img src='./icons/policy.svg' alt='' className='menuItemIcon' />
                 <div>Policy</div>
               </a>
             </div>
@@ -43,6 +43,7 @@ export default function Menu() {
             <div>LogOut</div>
           </a>
         </div>
+        <div className='menuHide'></div>
       </div>
     </div>
   )

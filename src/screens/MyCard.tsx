@@ -1,7 +1,7 @@
 export default function MyCard() {
   return (
-    <div className='component flex justify-center pr-0'>
-      <div className='maxWidth flexCol gap-4 '>
+    <div className='component flex justify-center '>
+      <div className='maxWidth flexCol gap-4 pr-0 '>
         <div className='header'>My Card</div>
         <div className='flex gap-4'>
           <div className='myCardPlusContainer'>

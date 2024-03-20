@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="component">
+      <div class="maxWidth relative bg-black/30">
+        <div id="menuButton">
+          menu
+        </div>
+        <img src="./icons/telegram.svg" alt="" >
+        <img src="./icons/telegram.svg" alt="" >
+        <img src="./icons/telegram.svg" alt="" >
+        <img src="./icons/telegram.svg" alt="" >
+
+
+        <div class="menu" id="menu">
+          <div class="flexCol gap-10" ">
+            <div>
+              <img src="./icons/appIcon.svg" alt="" class="w-24" />
+            </div>
+            <div class="menuItems" id="menuItem" >
+              <a class="menuItemActive">
+                <img src="./icons/business.svg" alt="" class="menuItemIcon" />
+                <div>Our Business</div>
+              </a>
+              <a class="menuItem">
+                <img src="./icons/messages.svg" alt="" class="menuItemIcon" />
+                <div>Messages</div>
+              </a>
+              <a class="menuItem">
+                <img src="./icons/exchange.svg" alt="" class="menuItemIcon" />
+                <div>Exchange</div>
+              </a>
+              <a class="menuItem">
+                <img src="./icons/task.svg" alt="" class="menuItemIcon" />
+                <div>Our Task</div>
+              </a>
+              <a class="menuItem">
+                <img src="./icons/team.svg" alt="" class="menuItemIcon" />
+                <div>My Team</div>
+              </a>
+              <a class="menuItem">
+                <img src="./icons/support.svg" alt="" class="menuItemIcon" />
+                <div>24/7 Support</div>
+              </a>
+              <a class="menuItem">
+                <img src="./icons/policy.svg" alt="" class="menuItemIcon" />
+                <div>Policy</div>
+              </a>
+            </div>
+            <a class="flex items-center gap-3 px-5 text-sm font-semibold text-accent">
+              <img src="./icons/logOut.svg" alt="" />
+              <div>LogOut</div>
+            </a>
+          </div>
+        </div>
+        <div class="menuHide" id="menuHide"></div>
+      </div>
+    </div>
+    
+    <script>
+      const menu = document.getElementById('menu')
+      const menuItems = document.querySelectorAll('.menuItem')
+      const menuButton = document.getElementById('menuButton')
+      const menuHide = document.getElementById('menuHide')
+
+
+      menuButton.addEventListener('click', () => {
+        menu.style.display = 'flex'
+        menu.style.left = '0'
+        menuHide.style.display = 'block'
+        menuHide.style.opacity = '0.5'
+        
+        console.log('clicked');
+      })
+
+      menuHide.addEventListener('click', () => {
+        
+        menu.style.left = '-100%'
+        menuHide.style.opacity = '0'
+        setTimeout(() => {
+           menuHide.style.display = 'none'
+
+        }, 450)
+        console.log('clicked');
+      })
+
+      menuItems.forEach((menuItem) => {
+        menuItem.addEventListener('click', () => {
+          menuItems.forEach((item) => {
+            item.classList.remove('menuItemActive')
+          })
+          menuItem.classList.add('menuItemActive')
+        })
+      })
+    </script>
+  </body>
+</html>

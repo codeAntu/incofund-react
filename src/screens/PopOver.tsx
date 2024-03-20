@@ -2,9 +2,7 @@ import React from 'react'
 
 export default function PopOver() {
   return (
-
-
-    // this is not the actual code,
+    // this is not the actual code,.....
 
     <div className='flexCenter h-[100dvh] bg-black/20'>
       {/* <div className='flex w-[85%] flex-col items-center gap-8 rounded-[32px] bg-white p-5'>

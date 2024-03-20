@@ -23,7 +23,7 @@ export default function Withdraw() {
             <div className='flexCol gap-2'>
               <div className='flex justify-between'>
                 <div className='contentHeader'>Selected Receiving Bank Card</div>
-                <div className='contentHeader text-accent'>Add Card+</div>
+                <a className='contentHeader text-accent'>Add Card +</a>
               </div>
               <div className='flex flex-col gap-2'>
                 <label htmlFor='50000' className='flex items-center gap-2 text-sm font-semibold text-black/80'>
@@ -41,7 +41,7 @@ export default function Withdraw() {
               </ul>
             </div>
           </div>
-          <div className='flexCenter w-full'>
+          <div className='flexCenter w-full py-4'>
             <button className='buttonRounded w-2/3'>Confirm</button>
           </div>
         </div>

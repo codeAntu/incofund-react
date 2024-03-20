@@ -11,7 +11,7 @@ export default function Recharge() {
             </div>
             <div className='text-sm font-medium text-black/30'>Withdraw Amount: ₹15.00</div>
           </div>
-          <div className='flexCol gap-1'>
+          <div className='flexCol gap-2 '>
             <div className='inputText '>Quick Options</div>
             <div className='buttonRadio '>
               <input type='radio' id='780' name='quick-opt' className='radioHidden' />

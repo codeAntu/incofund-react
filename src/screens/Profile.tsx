@@ -1,7 +1,7 @@
 export default function Profile() {
   return (
-    <div className='component flexCenter  '>
-      <div className='maxWidth flex w-full flex-col justify-center gap-16'>
+    <div className='component '>
+      <div className='maxWidth flex w-full flex-col  gap-4'>
         <div className='header '>Profile</div>
         <div className=' flex flex-col gap-8'>
           <div className='flexColCenter gap-3 py-4'>
@@ -15,7 +15,7 @@ export default function Profile() {
           </div>
           <div className='recordCard'>
             <div className='text-xl font-bold'>My Records</div>
-            <div className='flexCol gap-1.5'>
+            <div className='flexCol w-full gap-1.5'>
               <a className='recordItem '>
                 <div className='recordItemTitle'>Nickname</div>
                 <div className='recordItemValue'>

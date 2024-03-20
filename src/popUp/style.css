@@ -1,0 +1,104 @@
+.menu {
+  display: flex;
+  position: absolute;
+  left: -1000px;
+  top: 0;
+  max-width: 300px;
+  flex-direction: column;
+  height: 100%;
+  width: 75%;
+  justify-content: space-between;
+  border-top-right-radius: 3rem;
+  background-color: white;
+  padding: 1.25rem;
+  padding-top: 5rem;
+  z-index: 20;
+}
+
+.menuHide {
+  padding: 0;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 14px;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.menuItemActive {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 14px;
+  border: 1px solid;
+  background-color: #fc5f0f;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+}
+
+.menuItemIcon {
+  width: 1.25rem;
+}
+
+.menuHide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  height: 100dvb;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+#menuHide {
+  transition-duration: 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+#menu {
+  transition: left 0.5s;
+}
+
+#addBank {
+  transition: bottom 0.5s;
+  z-index: 20;
+}
+
+.close {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  height: 100dvb;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+}
+
+#close {
+  transition-duration: 0.5s;
+  animation: fadeIn 0.5s;
+}

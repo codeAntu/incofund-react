@@ -1,13 +1,13 @@
 export default function TaskSystem() {
   return (
     <div className='component flex justify-center'>
-      <div className='maxWidth flex w-full flex-col gap-16'>
+      <div className='maxWidth flex w-full flex-col gap-0'>
         <div className='headerContainer'>
           <div className='header'>Task System</div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
         <div>
-          <div className='px-0.5 py-4 text-lg font-semibold'>Do tasks to get more rewards</div>
+          <div className='px-0.5 py-4  text-lg font-semibold'>Do tasks to get more rewards</div>
           <div className='flexCol gap-3.5'>
             <div className='taskCard '>
               <div className='contentHeader'>Invite to activate 10</div>
