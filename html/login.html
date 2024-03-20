@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
   </head>
   <body>
+    <main id="main" selector="main"></main>
     <div id="root">
       <div class="component flexCenter">
         <div class="maxWidth flex w-full flex-col justify-center gap-16">
@@ -52,5 +54,32 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script>
+      const notyf = new Notyf({
+        duration: 1000,
+        position: {
+          x: 'center',
+          y: 'top',
+        },
+        types: [
+          {
+            type: 'warning',
+            background: '#FC5F0F',
+            icon: {
+              className: 'material-icons',
+              tagName: 'i',
+              text: 'warning',
+            },
+          },
+          {
+            type: 'error',
+            background: 'indianred',
+            duration: 2000,
+            dismissible: true,
+          },
+        ],
+      })
+    </script>
   </body>
 </html>
