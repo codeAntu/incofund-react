@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="component flexCenter">
+        <div class="maxWidth flex w-full flex-col justify-center gap-16">
+          <div class="flex flex-col items-center gap-24">
+            <img src="./icons/appIcon.svg" alt="" class="w-[60%] pt-6" />
+            <div class="flex flex-col items-center justify-center gap-2">
+              <div class="text-3xl font-semibold text-accent">Welcome</div>
+              <div class="text-sm font-semibold opacity-50">Welcome to Incogroup investing app</div>
+            </div>
+          </div>
+          <form action="">
+            <div class="flex flex-col gap-10">
+              <div class="flex flex-col gap-3">
+                <div class="inputContainer">
+                  <div class="inputText">Phone Number</div>
+                  <div class="inputBox">
+                    <img src="./icons/phone.svg" alt="" class="inputIcon" />
+                    <input type="text" class="input" placeholder="Enter your phone number" />
+                  </div>
+                </div>
+                <div class="inputContainer">
+                  <div class="inputText">Password</div>
+                  <div class="inputBox">
+                    <img src="./icons/key.svg" alt="" class="inputIcon" />
+                    <input type="password" class="input" placeholder="Enter password" />
+                  </div>
+                </div>
+                <div class="px-2 pb-1 text-right text-sm text-accent opacity-90">
+                  <a href="">Forget password?</a>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <button class="button" type="submit">Log In</button>
+                <div class="flex w-full items-center gap-1 px-2">
+                  <hr class="w-full border-[0.5px] border-black/20" />
+                  <p class="text-xs text-black/60">Or</p>
+                  <hr class="w-full border-[0.5px] border-black/20" />
+                </div>
+                <button class="button2">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div id="popUp" class="absolute left-0 top-0 hidden h-[100dvh] w-full items-center justify-center bg-black/20">
@@ -29,6 +29,9 @@
         </div>
       </div>
     </div>
+
+    <!--Rest of the code here-->
+
     <script>
       function popUpHandler() {
         popUp.style.display = 'flex'
@@ -78,6 +81,7 @@
       }
     </script>
     <script>
+      // Show the popup
       popup({
         title: 'Hello',
         message: 'World This is a very long message that should be truncated',

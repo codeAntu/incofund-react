@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Login from './screens/Login.tsx'
-import App from './App.tsx'
 import Register from './screens/Register.tsx'
 import Profile from './screens/Profile.tsx'
 import TaskSystem from './screens/TaskSystem.tsx'
@@ -19,10 +18,11 @@ import Refer from './screens/Refer.tsx'
 import PopOver from './screens/PopOver.tsx'
 import Nav from './screens/Nav.tsx'
 import Menu from './screens/Menu.tsx'
+import Test from './screens/Test.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/* <App /> */}
+    <Test />
     {/* <Login /> */}
     {/* <Register /> */}
     {/* <Profile />  */}
@@ -37,7 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <Product /> */}
     {/* <Home /> */}
     {/* <Refer /> */}
-    <PopOver />
+    {/* <PopOver /> */}
     {/* <Nav /> */}
     {/* <Menu /> */}
   </React.StrictMode>,
