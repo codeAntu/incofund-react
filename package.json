@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "prettier": "prettier --check . ",
-    "prettier:fix": "prettier --write ."
+    "prettier:fix": "prettier --write .",
+    "tailwind-build": "npx tailwindcss -o tailwind.css"
   },
   "dependencies": {
     "lucide-react": "^0.358.0",

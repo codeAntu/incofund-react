@@ -27,7 +27,7 @@
     @apply flex min-h-[100dvh] justify-center;
   }
   .maxWidth {
-    @apply w-full max-w-[380px] p-5;
+    @apply w-full max-w-xl p-5;
   }
   .header {
     @apply py-4 text-3xl font-semibold text-accent;
