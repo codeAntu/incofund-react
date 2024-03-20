@@ -13,7 +13,7 @@ export default function Profile() {
               <div className='text-center text-sm font-semibold text-black/40'>Id 12345678</div>
             </div>
           </div>
-          <div className='recordCard'>
+          <div className='myRecordCard'>
             <div className='text-xl font-bold'>My Records</div>
             <div className='flexCol w-full gap-1.5'>
               <a className='recordItem '>

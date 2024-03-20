@@ -103,7 +103,7 @@
     @apply flex flex-col gap-2 rounded-[14px] border-[1.5px] border-accent/80 bg-accent/5 p-5;
   }
 
-  .recordCard {
+  .myRecordCard {
     @apply flex flex-col gap-2 rounded-lg px-4;
   }
   .recordItem {
@@ -144,7 +144,10 @@
   } */
 
   .taskBar {
-    @apply rounded-full bg-accent py-1;
+    @apply flex justify-start rounded-full bg-accent/20;
+  }
+  .tasBarCompleat {
+    @apply w-3/5 rounded-full bg-accent py-1;
   }
   .taskBarText {
     @apply text-xs font-medium text-accent/70;

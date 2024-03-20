@@ -11,7 +11,7 @@ export default function VIPLevel() {
               benefits of the product.
             </div>
           </div>
-          <div className='flexCol gap-4'>
+          <div className='flexCol gap-3.5'>
             <div className='taskCard '>
               <div className='flex justify-between'>
                 <div className='flex gap-3'>
@@ -25,11 +25,13 @@ export default function VIPLevel() {
                   <div className='taskBarText'>Investment amount reaches</div>
                   <div className='taskStatus'>₹0/₹0</div>
                 </div>
-                <div className='taskBar'></div>
+                <div className='taskBar'>
+                  <div className='tasBarCompleat'> </div>
+                </div>
               </div>
             </div>
             <div className='taskCard '>
-              <div className='flex  justify-between'>
+              <div className='flex justify-between'>
                 <div className='flex gap-3'>
                   <img src='./icons/vip2.svg' alt='' className='inputIcon' />
                   <div className='contentHeader'> VIP Level 0</div>
@@ -41,11 +43,13 @@ export default function VIPLevel() {
                   <div className='taskBarText'>Investment amount reaches</div>
                   <div className='taskStatus'>₹0/₹0</div>
                 </div>
-                <div className='taskBar'></div>
+                <div className='taskBar'>
+                  <div className='tasBarCompleat'> </div>
+                </div>
               </div>
             </div>
             <div className='taskCard '>
-              <div className='flex  justify-between'>
+              <div className='flex justify-between'>
                 <div className='flex gap-3'>
                   <img src='./icons/vip2.svg' alt='' className='inputIcon' />
                   <div className='contentHeader'> VIP Level 0</div>
@@ -57,11 +61,13 @@ export default function VIPLevel() {
                   <div className='taskBarText'>Investment amount reaches</div>
                   <div className='taskStatus'>₹0/₹0</div>
                 </div>
-                <div className='taskBar'></div>
+                <div className='taskBar'>
+                  <div className='tasBarCompleat'> </div>
+                </div>
               </div>
             </div>
             <div className='taskCard '>
-              <div className='flex  justify-between'>
+              <div className='flex justify-between'>
                 <div className='flex gap-3'>
                   <img src='./icons/vip2.svg' alt='' className='inputIcon' />
                   <div className='contentHeader'> VIP Level 0</div>
@@ -73,55 +79,9 @@ export default function VIPLevel() {
                   <div className='taskBarText'>Investment amount reaches</div>
                   <div className='taskStatus'>₹0/₹0</div>
                 </div>
-                <div className='taskBar'></div>
-              </div>
-            </div>
-            <div className='taskCard '>
-              <div className='flex  justify-between'>
-                <div className='flex gap-3'>
-                  <img src='./icons/vip2.svg' alt='' className='inputIcon' />
-                  <div className='contentHeader'> VIP Level 0</div>
+                <div className='taskBar'>
+                  <div className='tasBarCompleat'> </div>
                 </div>
-                <div className='contentHeader'>₹0</div>
-              </div>
-              <div className='flexCol gap-1'>
-                <div className='flex justify-between'>
-                  <div className='taskBarText'>Investment amount reaches</div>
-                  <div className='taskStatus'>₹0/₹0</div>
-                </div>
-                <div className='taskBar'></div>
-              </div>
-            </div>
-            <div className='taskCard '>
-              <div className='flex  justify-between'>
-                <div className='flex gap-3'>
-                  <img src='./icons/vip2.svg' alt='' className='inputIcon' />
-                  <div className='contentHeader'> VIP Level 0</div>
-                </div>
-                <div className='contentHeader'>₹0</div>
-              </div>
-              <div className='flexCol gap-1'>
-                <div className='flex justify-between'>
-                  <div className='taskBarText'>Investment amount reaches</div>
-                  <div className='taskStatus'>₹0/₹0</div>
-                </div>
-                <div className='taskBar'></div>
-              </div>
-            </div>
-            <div className='taskCard '>
-              <div className='flex  justify-between'>
-                <div className='flex gap-3'>
-                  <img src='./icons/vip2.svg' alt='' className='inputIcon' />
-                  <div className='contentHeader'> VIP Level 0</div>
-                </div>
-                <div className='contentHeader'>₹0</div>
-              </div>
-              <div className='flexCol gap-1'>
-                <div className='flex justify-between'>
-                  <div className='taskBarText'>Investment amount reaches</div>
-                  <div className='taskStatus'>₹0/₹0</div>
-                </div>
-                <div className='taskBar'></div>
               </div>
             </div>
           </div>
