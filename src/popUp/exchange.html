@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./tailwind.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="popUpBtn">Pop Up</button>
+    <div id="popUp" class="absolute left-0 top-0 hidden h-[100dvh] w-full items-center justify-center bg-black/20">
+      <div class="flex w-10/12 flex-col items-center gap-8 rounded-3xl border bg-white px-5 py-6 backdrop-blur-2xl">
+        <div class="flex w-full flex-col items-center gap-3 text-center">
+          <div class="text-2xl font-semibold" id="text">Exchange</div>
+
+          <div class="text-sm font-semibold text-black/40">Please enter a valid redemption code to redeem</div>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Input Redeem Code"
+            class="w-full rounded-2xl border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 p-3.5"
+          />
+        </div>
+
+        <div class="flex w-full flex-col items-center gap-3">
+          <button
+            class="w-full rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-14 py-3 text-xs font-semibold text-[#FC5F0F]"
+            id="btn1"
+          >
+            Cancel
+          </button>
+          <button
+            class="w-full rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F] px-14 py-3 text-xs font-medium text-white outline-none"
+            id="btn2"
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const popUpBtn = document.getElementById('popUpBtn')
+      const popUp = document.getElementById('popUp')
+      const btn = document.getElementById('btn')
+
+      popUpBtn.onclick = popup
+      popUp.onclick = closePopUp
+      btn1.onclick = () => {
+        closePopUp({ target: popUp })
+      }
+      btn2.onclick = () => {
+        closePopUp({ target: popUp })
+      }
+
+      function popUpHandler() {}
+
+      function closePopUp(event) {
+        if (event.target === popUp) {
+          popUp.style.display = 'none'
+        }
+      }
+
+      function popup(options) {
+        document.getElementById('popUp').style.display = 'flex'
+      }
+    </script>
+  </body>
+</html>
