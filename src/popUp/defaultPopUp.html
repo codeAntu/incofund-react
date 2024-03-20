@@ -10,22 +10,23 @@
   <body>
     <button id="popUpBtn">Pop Up</button>
     <div id="popUp" class="absolute left-0 top-0 hidden h-[100dvh] w-full items-center justify-center bg-black/20">
-      <div class="flex w-10/12 flex-col items-center gap-8 rounded-3xl border bg-white p-5 backdrop-blur-2xl">
-        <div class="flex flex-col items-center gap-1 text-center">
-          <img src="./icons/telegram.svg" alt="" class="aspect-square w-[65px]" />
-          <div class="text-sm font-semibold">PopUp</div>
-          <div class="text-xs font-semibold text-black/40">PopUp text</div>
+      <div class="flex w-10/12 flex-col items-center gap-8 rounded-3xl border bg-white px-5 py-6 backdrop-blur-2xl">
+        <div class="flex flex-col items-center gap-1 pt-3 text-center">
+          <div class="text-2xl font-semibold" id="text">PopUp</div>
+          <div class="text-[15px] font-semibold text-black/40" id="message">PopUp text</div>
         </div>
         <div class="flex w-full flex-col items-center gap-3">
           <button
-            class="w-4/5 rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-14 py-3 text-xs font-semibold text-[#FC5F0F]"
+            class="hidden w-full rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F] px-14 py-3 text-xs font-medium text-white outline-none"
+            id="btn1"
           >
-            Cancel
+            Ok
           </button>
           <button
-            class="w-4/5 rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F] px-14 py-3 text-xs font-medium text-white outline-none"
+            class="hidden w-full rounded-full border-[1.5px] border-[#FC5F0F] bg-[#FC5F0F]/5 px-14 py-3 text-xs font-semibold text-[#FC5F0F]"
+            id="btn2"
           >
-            Join
+            > Cancel
           </button>
         </div>
       </div>
@@ -33,6 +34,25 @@
     <script>
       const popUpBtn = document.getElementById('popUpBtn')
       const popUp = document.getElementById('popUp')
+
+      popup({
+        title: 'Hello',
+        message: 'World This is a very long message that should be truncated',
+        buttons: [
+          {
+            text: 'OK',
+            action: function () {
+              console.log('OK')
+            },
+          },
+          {
+            text: 'Cancel',
+            action: function () {
+              console.log('Cancel')
+            },
+          },
+        ],
+      })
 
       popUpBtn.onclick = popUpHandler
       popUp.onclick = closePopUp
@@ -47,7 +67,64 @@
         }
       }
 
-  
+      function popup(options) {
+        // Get the elements
+        var titleElement = document.getElementById('text')
+        var messageElement = document.getElementById('message')
+        var btn1 = document.getElementById('btn1')
+        var btn2 = document.getElementById('btn2')
+
+        // Set the title and message
+        titleElement.textContent = options.title
+        messageElement.textContent = options.message
+
+        // Hide both buttons initially
+        btn1.style.display = 'none'
+        btn2.style.display = 'none'
+
+        // Display the buttons based on the input\\
+
+        if (options.buttons[0]) {
+          btn1.textContent = options.buttons[0].text
+          btn1.onclick = () => {
+            options.buttons[0].action()
+            closePopUp({ target: popUp })
+          }
+          btn1.style.display = 'block'
+        }
+
+        if (options.buttons[1]) {
+          btn2.textContent = options.buttons[1].text
+          btn2.onclick = () => {
+            options.buttons[1].action()
+            closePopUp({ target: popUp })
+          }
+          btn2.style.display = 'block'
+        }
+
+        // Show the popup
+        document.getElementById('popUp').style.display = 'flex'
+      }
+
+      // Call the function
+      popup({
+        title: 'Hello',
+        message: 'World This is a very long message that should be truncated',
+        buttons: [
+          {
+            text: 'OK',
+            action: function () {
+              console.log('OK')
+            },
+          },
+          {
+            text: 'Cancel',
+            action: function () {
+              console.log('Cancel')
+            },
+          },
+        ],
+      })
     </script>
   </body>
 </html>
