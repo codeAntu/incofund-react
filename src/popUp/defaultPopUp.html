@@ -34,16 +34,20 @@
       const popUpBtn = document.getElementById('popUpBtn')
       const popUp = document.getElementById('popUp')
 
-      popUpBtn.addEventListener('click', () => {
-        popUp.style.display = 'flex'
-        popUp.style.transition = 'all 0.5s'
-      })
+      popUpBtn.onclick = popUpHandler
+      popUp.onclick = closePopUp
 
-      popUp.addEventListener('click', (e) => {
-        if (e.target === popUp) {
+      function popUpHandler() {
+        popUp.style.display = 'flex'
+      }
+
+      function closePopUp(event) {
+        if (event.target === popUp) {
           popUp.style.display = 'none'
         }
-      })
+      }
+
+  
     </script>
   </body>
 </html>
