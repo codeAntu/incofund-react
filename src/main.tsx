@@ -29,7 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <TaskSystem /> */}
     {/* <Recharge /> */}
     {/* <Withdraw /> */}
-    <VIPLevel />
+    {/* <VIPLevel /> */}
     {/* <MyTeam /> */}
     {/* <MyRecords /> */}
     {/* <MyCard /> */}
@@ -37,7 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <Product /> */}
     {/* <Home /> */}
     {/* <Refer /> */}
-    {/* <PopOver /> */}
+    <PopOver />
     {/* <Nav /> */}
     {/* <Menu /> */}
   </React.StrictMode>,
