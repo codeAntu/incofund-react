@@ -38,10 +38,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <MyCard /> */}
     {/* <SplashScreen /> */}
     {/* <Product /> */}
-    {/* <Home /> */}
+    <Home />
     {/* <Refer /> */}
     {/* <PopOver />  ---- not for use ----  */}
-    <Nav />
+    {/* <Nav /> */}
     {/* <Menu />  */}
     {/* <ForgotPassword /> */}
     {/* <UpdatePassword /> */}
