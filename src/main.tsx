@@ -19,6 +19,9 @@ import PopOver from './screens/PopOver.tsx'
 import Nav from './screens/Nav.tsx'
 import Menu from './screens/Menu.tsx'
 import Test from './screens/Test.tsx'
+import ForgotPassword from './screens/ForgotPassword.tsx'
+import UpdatePassword from './screens/UpdatePassword.tsx'
+import EnterCode from './screens/EnterCode.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -40,5 +43,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <PopOver />  ---- not for use ----  */}
     <Nav />
     {/* <Menu />  */}
+    {/* <ForgotPassword /> */}
+    {/* <UpdatePassword /> */}
+    {/* <EnterCode /> */}
   </React.StrictMode>,
 )

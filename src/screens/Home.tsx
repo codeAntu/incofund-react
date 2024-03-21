@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className='component'>
+    <div className='component pb-24'>
       <div className='maxWidth flexCol gap-6'>
         <div className='headerContainer'>
           <div className='header'>
@@ -8,7 +8,7 @@ export default function Home() {
           </div>
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
-        <div className='flexCol fixed bottom-3 right-3 justify-center gap-0 '>
+        <div className='flexCol fixed bottom-24 right-3 justify-center gap-0 '>
           <div className='rounded-full bg-accent/10 p-5'>
             <img src='./icons/Check-In.svg' alt='' className='w-5' />
           </div>

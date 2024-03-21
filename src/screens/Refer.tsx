@@ -1,6 +1,6 @@
 export default function Refer() {
   return (
-    <div className='component'>
+    <div className='component pb-24'>
       <div className='maxWidth flexCol gap-6'>
         <div className='headerContainer'>
           <div className='header'>Refer</div>

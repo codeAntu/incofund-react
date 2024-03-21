@@ -1,6 +1,6 @@
 export default function Product() {
   return (
-    <div className='component flex justify-center  '>
+    <div className='component flex justify-center  pb-24'>
       <div className='maxWidth flex flex-col gap-4'>
         <div className='headerContainer'>
           <div className='header'>Product</div>

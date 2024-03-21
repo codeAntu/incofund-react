@@ -944,9 +944,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 5rem 1.25rem 2rem;
-  transition: left 0.5s;
 }
-
+.menuHide {
+  padding: 0;
+}
 .menuItems {
   display: flex;
   flex-direction: column;
@@ -982,7 +983,6 @@ video {
   width: 1.25rem;
 }
 .menuHide {
-  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -990,16 +990,13 @@ video {
   height: 100%;
   width: 100%;
   background-color: #00000080;
-  transition-duration: 0.5s;
-  animation: fadeIn 0.5s;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
+.otpInput {
+  flex-grow: 1;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 95 15 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .sr-only {
   position: absolute;
@@ -1055,8 +1052,8 @@ video {
 .-bottom-2 {
   bottom: -0.5rem;
 }
-.bottom-3 {
-  bottom: 0.75rem;
+.bottom-24 {
+  bottom: 6rem;
 }
 .left-0 {
   left: 0;
@@ -1195,9 +1192,6 @@ video {
 }
 .min-h-\[100dvh\] {
   min-height: 100dvh;
-}
-.w-1 {
-  width: 0.25rem;
 }
 .w-1\/2 {
   width: 50%;
@@ -2155,9 +2149,6 @@ video {
   -o-object-fit: scale-down;
   object-fit: scale-down;
 }
-.p-1 {
-  padding: 0.25rem;
-}
 .p-3 {
   padding: 0.75rem;
 }
@@ -2242,6 +2233,9 @@ video {
 }
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+.pb-24 {
+  padding-bottom: 6rem;
 }
 .pb-5 {
   padding-bottom: 1.25rem;
@@ -2465,6 +2459,9 @@ video {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }
+.opacity-40 {
+  opacity: 0.4;
+}
 .opacity-50 {
   opacity: 0.5;
 }
@@ -2590,6 +2587,11 @@ video {
 }
 .outline-double {
   outline-style: double;
+}
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 .ring-inset {
   --tw-ring-inset: inset;
@@ -2731,7 +2733,7 @@ video {
 }
 @font-face {
   font-family: Montserrat;
-  src: url(./fonts/Montserrat-VariableFont_wght.ttf) format('woff2');
+  src: url(/fonts/Montserrat-VariableFont_wght.ttf) format('woff2');
   font-weight: 1 1000;
   font-style: normal;
   font-display: swap;
