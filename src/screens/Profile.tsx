@@ -9,7 +9,7 @@ export default function Profile() {
               <img src='./icons/appIcon.svg' alt='' className='h-24 w-24 rounded-full bg-accent/20' />
             </div>
             <div>
-              <div className='text-xl font-bold'>Code Antu</div>
+              <div className='text-xl font-bold'>username</div>
               <div className='text-center text-sm font-semibold text-black/40'>Id 12345678</div>
             </div>
           </div>
@@ -19,7 +19,7 @@ export default function Profile() {
               <a className='recordItem '>
                 <div className='recordItemTitle'>Nickname</div>
                 <div className='recordItemValue'>
-                  <div>Code Antu</div>
+                  <div>username</div>
                   <img src='./icons/rightArrow.svg' alt='' className='recordCardArrow' />
                 </div>
               </a>
