@@ -20,7 +20,7 @@ export default function PopOver() {
       <button id='popUpBtn'>Pop Up</button>
       <div
         id='popUp'
-        className='fixed left-0 top-0 hidden h-[100dvh] w-full items-center justify-center bg-black/20'
+        className='fixed z-30 left-0 top-0 hidden h-[100dvh] w-full items-center justify-center bg-black/20'
       >
         <div className='flex w-10/12 flex-col items-center gap-8 rounded-3xl border bg-white px-5 py-6 backdrop-blur-2xl'>
           <div className='flex w-full flex-col items-center gap-3 text-center'>

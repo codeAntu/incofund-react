@@ -891,6 +891,9 @@ video {
 .referTextContainer {
   width: 85%;
 }
+.z-30 {
+  z-index: 30;
+}
 .nav {
   position: fixed;
   bottom: 0;
@@ -901,6 +904,7 @@ video {
   justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  z-index: 10;
 }
 .navIcon {
   width: 1.5rem;
