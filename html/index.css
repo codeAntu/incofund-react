@@ -891,20 +891,17 @@ video {
 .referTextContainer {
   width: 85%;
 }
-.z-30 {
-  z-index: 30;
-}
 .nav {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 10;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  z-index: 10;
 }
 .navIcon {
   width: 1.5rem;
@@ -949,7 +946,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 5rem 1.25rem 2rem;
   transition-duration: 0.5s;
-  animation: fadeIn 0.5s;
 }
 .menuItems {
   display: flex;
@@ -987,15 +983,15 @@ video {
 }
 .menuHide {
   position: fixed;
-  display: none;
   left: 0;
   top: 0;
   z-index: 10;
+  display: none;
   height: 100%;
   width: 100%;
   background-color: #00000080;
   transition-duration: 0.5s;
-  animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s ease-in-out;
 }
 .otpInput {
   flex-grow: 1;
@@ -1015,16 +1011,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   transition-duration: 0.5s;
-  animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
+  animation: fadeIn 0.5s ease-in-out;
 }
 .addBank {
   position: fixed;
@@ -1043,7 +1030,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1.25rem;
   transition-duration: 0.5s;
-  animation: fadeIn 0.5s;
+}
+.popUp {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  display: none;
+  height: 100dvh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #0003;
 }
 .sr-only {
   position: absolute;
@@ -1119,6 +1117,9 @@ video {
 }
 .isolation-auto {
   isolation: auto;
+}
+.z-30 {
+  z-index: 30;
 }
 .float-start {
   float: inline-start;
@@ -2814,4 +2815,15 @@ video {
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   padding: 10px;
+}
+.animateFedIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
 }

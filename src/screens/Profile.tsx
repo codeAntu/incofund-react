@@ -1,6 +1,6 @@
 export default function Profile() {
   return (
-    <div className='component '>
+    <div className='component pb-24 '>
       <div className='maxWidth flex w-full flex-col  gap-4'>
         <div className='header '>Profile</div>
         <div className=' flex flex-col gap-8'>

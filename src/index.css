@@ -285,7 +285,7 @@
   }
 
   .nav {
-    @apply fixed bottom-0 left-0 flex w-full items-center justify-between bg-white;
+    @apply fixed bottom-0 left-0 z-10 flex w-full items-center justify-between bg-white;
   }
   .navIcon {
     @apply w-6;
@@ -301,7 +301,7 @@
   }
 
   .menu {
-    @apply fixed -left-[1000px] top-0 z-20 flex  h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20;
+    @apply fixed -left-[1000px] top-0 z-20 flex  h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20 duration-500;
   }
 
   .menuItems {
@@ -317,17 +317,33 @@
     @apply w-5;
   }
   .menuHide {
-    @apply fixed left-0 top-0 z-10 h-full w-full bg-black/50;
+    @apply fixed left-0 top-0 z-10 h-full w-full bg-black/50 hidden animateFedIn duration-500;
   }
   .otpInput {
     @apply flex-grow bg-accent px-4;
   }
 
   .close {
-    @apply fixed left-0 top-0 z-10 hidden h-[100dvh] w-full  bg-black;
+    @apply fixed left-0 top-0 z-10 hidden h-[100dvh] w-full  bg-black animateFedIn duration-500;
   }
 
   .addBank {
-    @apply fixed -bottom-full left-0 z-20 flex w-full flex-col items-center gap-4 rounded-t-3xl border bg-white p-5;
+    @apply  fixed -bottom-full left-0 z-20 flex w-full flex-col items-center gap-4 rounded-t-3xl border bg-white p-5 duration-500;
+  }
+  .popUp {
+    @apply fixed  left-0 top-0 z-30 hidden h-[100dvh] w-full items-center justify-center bg-black/20;
+  }
+}
+
+.animateFedIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
   }
 }
