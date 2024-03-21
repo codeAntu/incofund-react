@@ -22,6 +22,7 @@ import Test from './screens/Test.tsx'
 import ForgotPassword from './screens/ForgotPassword.tsx'
 import UpdatePassword from './screens/UpdatePassword.tsx'
 import EnterCode from './screens/EnterCode.tsx'
+import AddBank from './screens/AddBank.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -38,13 +39,14 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <MyCard /> */}
     {/* <SplashScreen /> */}
     {/* <Product /> */}
-    <Home />
+    {/* <Home /> */}
     {/* <Refer /> */}
-    {/* <PopOver />  ---- not for use ----  */}
+    {/* <PopOver /> */}
     {/* <Nav /> */}
     {/* <Menu />  */}
     {/* <ForgotPassword /> */}
     {/* <UpdatePassword /> */}
     {/* <EnterCode /> */}
+    <AddBank />
   </React.StrictMode>,
 )

@@ -285,7 +285,7 @@
   }
 
   .nav {
-    @apply absolute bottom-0 left-0 flex w-full items-center justify-between bg-white;
+    @apply fixed bottom-0 left-0 flex w-full items-center justify-between bg-white;
   }
   .navIcon {
     @apply w-6;
@@ -301,11 +301,9 @@
   }
 
   .menu {
-    @apply absolute -left-[1000px] top-0 z-20 flex  h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20;
+    @apply fixed -left-[1000px] top-0 z-20 flex  h-full w-9/12 max-w-[300px] flex-col justify-between rounded-r-3xl bg-white px-5 py-8 pt-20;
   }
-  .menuHide {
-    @apply p-0;
-  }
+
   .menuItems {
     @apply flexCol gap-3;
   }
@@ -319,9 +317,17 @@
     @apply w-5;
   }
   .menuHide {
-    @apply absolute left-0 top-0  z-10 h-full w-full bg-black/50;
+    @apply fixed left-0 top-0 z-10 h-full w-full bg-black/50;
   }
   .otpInput {
-    @apply bg-accent flex-grow px-4 ;
+    @apply flex-grow bg-accent px-4;
+  }
+
+  .close {
+    @apply fixed left-0 top-0 z-10 hidden h-[100dvh] w-full  bg-black;
+  }
+
+  .addBank {
+    @apply fixed -bottom-full left-0 z-20 flex w-full flex-col items-center gap-4 rounded-t-3xl border bg-white p-5;
   }
 }

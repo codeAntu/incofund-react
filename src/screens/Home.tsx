@@ -9,12 +9,11 @@ export default function Home() {
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
         <div className='flexCol fixed bottom-24 right-3 justify-center gap-0 '>
-          <div className='rounded-full bg-accent/10 p-5'>
+          <div className='rounded-full bg-[#FEE4D7] p-5'>
             <img src='./icons/Check-In.svg' alt='' className='w-5' />
           </div>
           <button className='absolute -bottom-2 left-px w-full rounded-full bg-accent px-1 py-0.5 text-[10px] font-semibold text-white'>
-            {' '}
-            check in{' '}
+            check in
           </button>
         </div>
         <div className='flexCol gap-5'>

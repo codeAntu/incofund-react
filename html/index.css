@@ -892,7 +892,7 @@ video {
   width: 85%;
 }
 .nav {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
@@ -929,7 +929,7 @@ video {
   padding-bottom: 0.75rem;
 }
 .menu {
-  position: absolute;
+  position: fixed;
   left: -1000px;
   top: 0;
   z-index: 20;
@@ -944,9 +944,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 5rem 1.25rem 2rem;
-}
-.menuHide {
-  padding: 0;
+  transition-duration: 0.5s;
+  animation: fadeIn 0.5s;
 }
 .menuItems {
   display: flex;
@@ -983,13 +982,16 @@ video {
   width: 1.25rem;
 }
 .menuHide {
-  position: absolute;
+  position: fixed;
+  display: none;
   left: 0;
   top: 0;
   z-index: 10;
   height: 100%;
   width: 100%;
   background-color: #00000080;
+  transition-duration: 0.5s;
+  animation: fadeIn 0.5s;
 }
 .otpInput {
   flex-grow: 1;
@@ -997,6 +999,47 @@ video {
   background-color: rgb(252 95 15 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.close {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+  height: 100dvh;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  transition-duration: 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.addBank {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  transition-duration: 0.5s;
+  animation: fadeIn 0.5s;
 }
 .sr-only {
   position: absolute;
@@ -1640,6 +1683,9 @@ video {
 .gap-0 {
   gap: 0px;
 }
+.gap-0\.5 {
+  gap: 0.125rem;
+}
 .gap-1 {
   gap: 0.25rem;
 }
@@ -1654,6 +1700,9 @@ video {
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 .gap-20 {
   gap: 5rem;
@@ -1926,8 +1975,14 @@ video {
 .rounded {
   border-radius: 0.25rem;
 }
+.rounded-2xl {
+  border-radius: 1rem;
+}
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+.rounded-\[14px\] {
+  border-radius: 14px;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -2047,12 +2102,13 @@ video {
 .bg-\[\#FC5F0F\]\/5 {
   background-color: #fc5f0f0d;
 }
+.bg-\[\#FEE4D7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 228 215 / var(--tw-bg-opacity));
+}
 .bg-accent {
   --tw-bg-opacity: 1;
   background-color: rgb(252 95 15 / var(--tw-bg-opacity));
-}
-.bg-accent\/10 {
-  background-color: #fc5f0f1a;
 }
 .bg-accent\/20 {
   background-color: #fc5f0f33;
@@ -2151,6 +2207,9 @@ video {
 }
 .p-3 {
   padding: 0.75rem;
+}
+.p-3\.5 {
+  padding: 0.875rem;
 }
 .p-5 {
   padding: 1.25rem;
@@ -2407,6 +2466,10 @@ video {
 .text-accent {
   --tw-text-opacity: 1;
   color: rgb(252 95 15 / var(--tw-text-opacity));
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .text-black\/30 {
   color: #0000004d;
