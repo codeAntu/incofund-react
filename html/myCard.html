@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+  </head>
+  <body>
+    <main id="main" selector="main"></main>
+    <div id="root">
+      <div class="component flex justify-center">
+        <div class="maxWidth flexCol gap-4 pr-0">
+          <div class="header">My Card</div>
+          <div class="flex gap-4">
+            <div class="myCardPlusContainer">
+              <div class="myCardPlus">+</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="myCard flexCol justify-between">
+                <div>
+                  <div class="muCardText">Balance</div>
+                  <div class="myCardNumber">$ 4013.90</div>
+                </div>
+                <div class="flexCol gap-3.5">
+                  <img src="./icons/myCardIcon.svg" alt="" class="myCardIcon" />
+                  <div>
+                    <div class="muCardText">SBI Bank</div>
+                    <div class="myCardNumber">5401 **** **** 8510</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flexCol gap-4 pt-6">
+            <div class="text-lg font-semibold">Cards</div>
+            <label class="flex gap-6" htmlFor="card1">
+              <div class="flex items-center justify-center">
+                <input type="radio" name="card" value="credit" class="radio" id="card1" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="myCard flexCol justify-between">
+                  <div>
+                    <div class="muCardText">Balance</div>
+                    <div class="myCardNumber">$ 4013.90</div>
+                  </div>
+                  <div class="flexCol gap-3.5">
+                    <img src="./icons/myCardIcon.svg" alt="" class="myCardIcon" />
+                    <div>
+                      <div class="muCardText">SBI Bank</div>
+                      <div class="myCardNumber">5401 **** **** 8510</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <label class="flex gap-6" htmlFor="card2">
+              <div class="flex items-center justify-center">
+                <input type="radio" name="card" value="credit" class="radio" id="card2" />
+              </div>
+              <div class="overflow-hidden">
+                <div class="myCard flexCol justify-between">
+                  <div>
+                    <div class="muCardText">Balance</div>
+                    <div class="myCardNumber">$ 4013.90</div>
+                  </div>
+                  <div class="flexCol gap-3.5">
+                    <img src="./icons/myCardIcon.svg" alt="" class="myCardIcon" />
+                    <div>
+                      <div class="muCardText">SBI Bank</div>
+                      <div class="myCardNumber">5401 **** **** 8510</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

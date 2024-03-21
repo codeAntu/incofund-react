@@ -22,23 +22,23 @@ import Test from './screens/Test.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Test />
+    {/* <Test /> */}
     {/* <Login /> */}
     {/* <Register /> */}
-    {/* <Profile />  */}
-    {/* <TaskSystem /> */}
-    {/* <Recharge /> */}
-    {/* <Withdraw /> */}
+    {/* <Profile />    */}
+    {/* <TaskSystem />  */}
+    {/* <Recharge />  */}
+    {/* <Withdraw />  */}
     {/* <VIPLevel /> */}
-    {/* <MyTeam /> */}
+    {/* <MyTeam />  */}
     {/* <MyRecords /> */}
     {/* <MyCard /> */}
     {/* <SplashScreen /> */}
     {/* <Product /> */}
     {/* <Home /> */}
     {/* <Refer /> */}
-    {/* <PopOver /> */}
-    {/* <Nav /> */}
-    {/* <Menu /> */}
+    {/* <PopOver />  ---- not for use ----  */}
+    <Nav />
+    {/* <Menu />  */}
   </React.StrictMode>,
 )
