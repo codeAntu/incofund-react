@@ -19,23 +19,24 @@
               <div class="px-10 text-center text-sm font-semibold opacity-50">Code has been sent to +917783</div>
             </div>
           </div>
-          <form action="">
+          <form id="otpForm">
             <div class="flex flex-col gap-14">
-              <div class="flex items-center justify-between gap-3">
-                <input type="number" maxlength="{1}" class="otpInput" />
-                <input type="number" maxlength="{1}" class="otpInput" />
-                <input type="number" maxlength="{1}" class="otpInput" />
-                <input type="number" maxlength="{1}" class="otpInput" />
-                <input type="number" maxlength="{1}" class="otpInput" />
-                <input type="number" maxlength="{1}" class="otpInput" />
+              <div class="flex items-center justify-between gap-3" id="otpInputContainer">
+                <input type="number" class="otpInput" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                <input type="number" class="otpInput" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                <input type="number" class="otpInput" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                <input type="number" class="otpInput" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                <input type="number" class="otpInput" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                <input type="number" class="otpInput" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
               </div>
+              <input type="text" class="hidden" maxlength="6" id="otp" />
               <div class="flexCol gap-2">
                 <div class="px-10 text-center text-sm font-semibold opacity-50">Didn’t get OTP Code ?</div>
                 <div class="px-10 text-center text-sm font-semibold text-accent">Resend Code</div>
               </div>
 
               <div class="flex flex-col gap-3">
-                <button class="button">Register</button>
+                <button class="button" onclick="handelSubmit()">Register</button>
               </div>
             </div>
           </form>
@@ -43,22 +44,52 @@
       </div>
     </div>
     <script>
-      const otpInput = document.querySelectorAll('.otpInput')
+      const otp = document.getElementById('otp')
+      const otpForm = document.getElementById('otpForm')
 
-      otpInput.forEach((input, i) => {
-        input.addEventListener('input', (e) => {
-          if (input.value.length > 1) input.value = input.value.slice(0, 1)
-          if (input.value.length > 0 && i < otpInput.length - 1) otpInput[i + 1].focus()
-          if (input.value.length == 0 && i > 0) otpInput[i - 1].focus()
+      function handelSubmit(e) {
+        if (otp.value.length < 6) return alert('Please enter 6 digit OTP')
+        else otpForm.submit()
+      }
 
-          if (i == otpInput.length - 1 && otpInput.every((r) => r.value)) {
-            console.log('Verify OTP')
-          }
+      const otpInputContainer = document.getElementById('otpInputContainer')
+      otpInputContainer.addEventListener('keydown', function (e) {
+        e.preventDefault()
+        var target = e.target
+        if (e.key === 'ArrowLeft') return prevElement(target)
+        if (e.key === 'ArrowRight') return nextElement(target)
+        if (e.key === 'Backspace') {
+          target.value = ''
+          otp.value = otp.value.slice(0, -1)
+          return prevElement(target)
+        }
+        if (e.key === 'Escape') return target.blur()
 
+        if (isNaN(e.key)) return
 
-        })
+        target.value = e.key
+        otp.value += e.key
+        nextElement(target)
       })
 
+      function nextElement(target) {
+        if (target.matches('input')) {
+          if (target.value) {
+            var next = target.nextElementSibling
+            if (next && next.matches('input')) next.focus()
+          }
+        }
+        if (!next) handelSubmit()
+      }
+
+      function prevElement(target) {
+        if (target.matches('input')) {
+          if (!target.value) {
+            var prev = target.previousElementSibling
+            if (prev && prev.matches('input')) prev.focus()
+          }
+        }
+      }
     </script>
   </body>
 </html>
