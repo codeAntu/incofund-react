@@ -23,6 +23,7 @@ import ForgotPassword from './screens/ForgotPassword.tsx'
 import UpdatePassword from './screens/UpdatePassword.tsx'
 import EnterCode from './screens/EnterCode.tsx'
 import AddBank from './screens/AddBank.tsx'
+import Otp from './screens/Otp.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -47,6 +48,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <ForgotPassword /> */}
     {/* <UpdatePassword /> */}
     {/* <EnterCode /> */}
-    <AddBank />
+    {/* <AddBank /> */}
+    <Otp />
   </React.StrictMode>,
 )

@@ -994,11 +994,25 @@ video {
   animation: fadeIn 0.5s ease-in-out;
 }
 .otpInput {
+  aspect-ratio: 1.1;
+  width: 2.6rem;
   flex-grow: 1;
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 95 15 / var(--tw-bg-opacity));
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(252 95 15 / var(--tw-border-opacity));
+  background-color: #fc5f0f1a;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-align: center;
+  outline: 2px solid transparent;
+  outline-offset: 0px;
+}
+.otpInput:focus {
+  outline-color: #fc5f0f;
 }
 .close {
   position: fixed;
@@ -1699,6 +1713,9 @@ video {
 }
 .gap-10 {
   gap: 2.5rem;
+}
+.gap-14 {
+  gap: 3.5rem;
 }
 .gap-16 {
   gap: 4rem;

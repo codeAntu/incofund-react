@@ -317,18 +317,19 @@
     @apply w-5;
   }
   .menuHide {
-    @apply fixed left-0 top-0 z-10 h-full w-full bg-black/50 hidden animateFedIn duration-500;
+    @apply animateFedIn fixed left-0 top-0 z-10 hidden h-full w-full bg-black/50 duration-500;
   }
+
   .otpInput {
-    @apply flex-grow bg-accent px-4;
+    @apply aspect-[1.1] w-[2.6rem] flex-grow  appearance-none rounded-xl border border-accent  bg-accent/10 px-4 text-center outline-none outline-offset-0  focus:outline-accent;
   }
 
   .close {
-    @apply fixed left-0 top-0 z-10 hidden h-[100dvh] w-full  bg-black animateFedIn duration-500;
+    @apply animateFedIn fixed left-0 top-0 z-10 hidden h-[100dvh]  w-full bg-black duration-500;
   }
 
   .addBank {
-    @apply  fixed -bottom-full left-0 z-20 flex w-full flex-col items-center gap-4 rounded-t-3xl border bg-white p-5 duration-500;
+    @apply fixed -bottom-full left-0 z-20 flex w-full flex-col items-center gap-4 rounded-t-3xl border bg-white p-5 duration-500;
   }
   .popUp {
     @apply fixed  left-0 top-0 z-30 hidden h-[100dvh] w-full items-center justify-center bg-black/20;

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+  </head>
+  <body>
+    <main id="main" selector="main"></main>
+    <div id="root">
+      <div class="component flexCenter">
+        <div class="maxWidth flex w-full flex-col justify-center gap-20">
+          <div class="flex flex-col items-center gap-16">
+            <img src="./icons/appIcon.svg" alt="" class="w-[60%] pt-6" />
+            <div class="flex flex-col items-center justify-center gap-2">
+              <div class="text-3xl font-semibold text-accent">Enter Code</div>
+              <div class="px-10 text-center text-sm font-semibold opacity-50">Code has been sent to +917783</div>
+            </div>
+          </div>
+          <form action="">
+            <div class="flex flex-col gap-14">
+              <div class="flex items-center justify-between gap-3">
+                <input type="number" maxlength="{1}" class="otpInput" />
+                <input type="number" maxlength="{1}" class="otpInput" />
+                <input type="number" maxlength="{1}" class="otpInput" />
+                <input type="number" maxlength="{1}" class="otpInput" />
+                <input type="number" maxlength="{1}" class="otpInput" />
+                <input type="number" maxlength="{1}" class="otpInput" />
+              </div>
+              <div class="flexCol gap-2">
+                <div class="px-10 text-center text-sm font-semibold opacity-50">Didn’t get OTP Code ?</div>
+                <div class="px-10 text-center text-sm font-semibold text-accent">Resend Code</div>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <button class="button">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      const otpInput = document.querySelectorAll('.otpInput')
+
+      otpInput.forEach((input, i) => {
+        input.addEventListener('input', (e) => {
+          if (input.value.length > 1) input.value = input.value.slice(0, 1)
+          if (input.value.length > 0 && i < otpInput.length - 1) otpInput[i + 1].focus()
+          if (input.value.length == 0 && i > 0) otpInput[i - 1].focus()
+
+          if (i == otpInput.length - 1 && otpInput.every((r) => r.value)) {
+            console.log('Verify OTP')
+          }
+
+
+        })
+      })
+
+    </script>
+  </body>
+</html>
