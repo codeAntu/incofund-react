@@ -44,8 +44,8 @@ export default function Refer() {
               </div>
             </div>
           </div>
-          <div className='inputBox justify-between border-none px-3 py-1.5'>
-            <div className='text-sm font-medium'>https://www.telegram.com/I..</div>
+          <div className='inputBox justify-between gap-2 border-none px-3 py-1.5'>
+            <div className='line-clamp-1 text-sm font-medium'>https://www.telegram.com/I..</div>
             <button className='buttonRounded px-10'>Copy</button>
           </div>
           <div className='flexCenter '>
