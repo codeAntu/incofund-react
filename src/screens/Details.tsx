@@ -11,20 +11,20 @@ export default function Details() {
                 <div className='detailsCardAmount'>$100</div>
               </div>
               <div></div>
-              <div>
+              <div className='flexCol text-right'>
                 <div className='detailsCardTitle'>Return Amount</div>
                 <div className='detailsCardAmount'>$10000</div>
               </div>
             </div>
-            <br />
+            <br  className=""/>
             <div className='flex justify-between'>
-              <div>
+              <div className='flexCol text-left'>
                 <div className='detailsCardTitle'>Returns (%)</div>
-                <div className="detailsCardText">+17.45 %</div>
+                <div className='detailsCardText'>+17.45 %</div>
               </div>
-              <div>
+              <div className='flexCol text-right'>
                 <div className='detailsCardTitle'>1D Returns (%)</div>
-                <div>+1.15 %</div>F
+                <div className='detailsCardText'>+1.15 %</div>
               </div>
             </div>
           </div>

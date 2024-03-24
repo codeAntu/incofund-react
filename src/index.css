@@ -345,7 +345,7 @@
     @apply text-2xl font-semibold text-[#35D49C];
   }
   .detailsCardText {
-    @apply bg-[#35D49C] text-sm;
+    @apply text-balance  font-semibold text-[#35D49C];
   }
 }
 
