@@ -32,7 +32,7 @@ export default function Details() {
             <div>
               <div className='py-3 font-semibold'>Specification</div>
               <div className='grid grid-cols-2'>
-                <div className='flexCol gap-3 '>
+                <div className='flexCol gap-3.5 '>
                   <div className='SpecificationItem '>
                     <img src='./icons/dollar.svg' alt='' className='SpecificationCardIcon' />
                     <div className='flexCol gap-0'>
@@ -55,7 +55,7 @@ export default function Details() {
                     </div>
                   </div>
                 </div>
-                <div className='flexCol gap-3 '>
+                <div className='flexCol gap-3.5 '>
                   <div className='SpecificationItem '>
                     <img src='./icons/return.svg' alt='' className='SpecificationCardIcon' />
                     <div className='flexCol gap-0'>
@@ -81,9 +81,17 @@ export default function Details() {
               </div>
             </div>
           </div>
-          <div className='flexCenter w-full py-4'>
+          <div className='flexCenter relative w-full py-4'>
+            <div className='slidText'>Slide to Invest</div>
             <input type='range' className='sliderCss' value='0' />
           </div>
+
+          {/* for  -> You were already invested*/}
+          {/* Just replace this Div */}
+          {/* <div className='flexCenter relative w-full py-4 '>
+            <div className='slidText text-xs'>You were already invested disable </div>
+            <input type='range' className='sliderDisabled' disabled value='0' />
+          </div> */}
         </div>
       </div>
     </div>

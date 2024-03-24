@@ -363,6 +363,12 @@
   .slider {
     @apply sliderCss;
   }
+  .sliderDisabled {
+    @apply sliderDisabledCss;
+  }
+  .slidText {
+    @apply absolute select-none text-sm font-semibold text-white;
+  }
 }
 
 .animateFedIn {
@@ -376,21 +382,23 @@
   border: none;
   outline: none;
   padding: 6px;
-  /* background: #8766ff11; */
   background-color: #fc5f0f;
   border-radius: 150px;
   overflow: hidden;
 }
 
-/* .sliderCss::-webkit-slider-thumb {
-  -webkit-appearance: none;
+.sliderDisabledCss {
   appearance: none;
+  width: 100%;
   height: 55px;
-  width: 0;
-  background: red;
+  border: none;
+  outline: none;
+  padding: 6px;
+  background-color: #dfdfdf;
   border-radius: 150px;
-  background: url('./icons/clock.svg');
-} */
+  overflow: hidden;
+  pointer-events: none;
+}
 
 .sliderCss::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -400,6 +408,18 @@
   background: url('./icons/slider.svg');
   background-size: cover;
   border-radius: 150px;
+  z-index: 30;
+}
+
+.sliderDisabledCss::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 45px;
+  width: 45px;
+  background: url('./icons/sliderDis.svg');
+  background-size: cover;
+  border-radius: 150px;
+  z-index: 30;
 }
 
 @keyframes fadeIn {

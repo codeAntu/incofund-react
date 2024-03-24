@@ -1105,6 +1105,42 @@ video {
 .SpecificationCardIcon {
   width: 1.5rem;
 }
+.sliderDisabled {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  background-color: #dfdfdf;
+  border-radius: 150px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.sliderDisabled::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 45px;
+  width: 45px;
+  background: url(./icons/sliderDis.svg);
+  background-size: cover;
+  border-radius: 150px;
+  z-index: 30;
+}
+.slidText {
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2907,6 +2943,20 @@ video {
   border-radius: 150px;
   overflow: hidden;
 }
+.sliderDisabledCss {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  background-color: #dfdfdf;
+  border-radius: 150px;
+  overflow: hidden;
+  pointer-events: none;
+}
 .sliderCss::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2916,6 +2966,18 @@ video {
   background: url(./icons/slider.svg);
   background-size: cover;
   border-radius: 150px;
+  z-index: 30;
+}
+.sliderDisabledCss::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 45px;
+  width: 45px;
+  background: url(./icons/sliderDis.svg);
+  background-size: cover;
+  border-radius: 150px;
+  z-index: 30;
 }
 @keyframes fadeIn {
   0% {
