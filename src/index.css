@@ -334,6 +334,19 @@
   .popUp {
     @apply fixed  left-0 top-0 z-30 hidden h-[100dvh] w-full items-center justify-center bg-black/20;
   }
+
+  .detailsCard {
+    @apply flex flex-col gap-2 rounded-3xl border p-5 shadow-lg;
+  }
+  .detailsCardTitle {
+    @apply text-sm font-semibold opacity-30;
+  }
+  .detailsCardAmount {
+    @apply text-2xl font-semibold text-[#35D49C];
+  }
+  .detailsCardText {
+    @apply bg-[#35D49C] text-sm;
+  }
 }
 
 .animateFedIn {
