@@ -1057,6 +1057,54 @@ video {
   justify-content: center;
   background-color: #0003;
 }
+.detailsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 20px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+}
+.detailsCardTitle {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  opacity: 0.3;
+}
+.detailsCardAmount {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(53 212 156 / var(--tw-text-opacity));
+}
+.detailsCardText {
+  text-wrap: balance;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(53 212 156 / var(--tw-text-opacity));
+}
+.SpecificationItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.SpecificationItemTitle {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #0000004d;
+}
+.SpecificationItemValue {
+  font-size: 15px;
+  font-weight: 650;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.SpecificationCardIcon {
+  width: 1.5rem;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2123,6 +2171,10 @@ video {
 .border-black\/20 {
   border-color: #0003;
 }
+.bg-\[\#F7F7F7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
 .bg-\[\#FC5F0F\] {
   --tw-bg-opacity: 1;
   background-color: rgb(252 95 15 / var(--tw-bg-opacity));
@@ -2841,6 +2893,29 @@ video {
 }
 .animateFedIn {
   animation: fadeIn 0.5s ease-in-out;
+}
+.sliderCss {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  background-color: #fc5f0f;
+  border-radius: 150px;
+  overflow: hidden;
+}
+.sliderCss::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 45px;
+  width: 45px;
+  background: url(./icons/slider.svg);
+  background-size: cover;
+  border-radius: 150px;
 }
 @keyframes fadeIn {
   0% {

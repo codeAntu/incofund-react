@@ -336,7 +336,7 @@
   }
 
   .detailsCard {
-    @apply flex flex-col gap-2 rounded-3xl border p-5 shadow-lg;
+    @apply flex flex-col gap-2 rounded-[20px]  bg-[#fff] p-5;
   }
   .detailsCardTitle {
     @apply text-sm font-semibold opacity-30;
@@ -347,9 +347,7 @@
   .detailsCardText {
     @apply text-balance  font-semibold text-[#35D49C];
   }
-  .SpecificationCard {
-    @apply flex flex-col gap-2 rounded-3xl border p-5 shadow-lg;
-  }
+
   .SpecificationItem {
     @apply flex items-center  gap-2;
   }
@@ -377,21 +375,31 @@
   height: 55px;
   border: none;
   outline: none;
+  padding: 6px;
   /* background: #8766ff11; */
   background-color: #fc5f0f;
   border-radius: 150px;
   overflow: hidden;
 }
 
-.sliderCss::-webkit-slider-thumb {
+/* .sliderCss::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   height: 55px;
   width: 0;
   background: red;
   border-radius: 150px;
-  box-shadow: -1000px 0px 0px 1000px blue;
-  /* transform: rotate(180deg); */
+  background: url('./icons/clock.svg');
+} */
+
+.sliderCss::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 45px;
+  width: 45px;
+  background: url('./icons/slider.svg');
+  background-size: cover;
+  border-radius: 150px;
 }
 
 @keyframes fadeIn {

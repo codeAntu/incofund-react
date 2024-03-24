@@ -1,6 +1,6 @@
 export default function Details() {
   return (
-    <div className='component flex justify-center  '>
+    <div className='component flex justify-center bg-[#F7F7F7] '>
       <div className='maxWidth flexCol flex-grow gap-4 '>
         <div className='header'>Details</div>
         <div className='content'>
@@ -82,7 +82,7 @@ export default function Details() {
             </div>
           </div>
           <div className='flexCenter w-full py-4'>
-            <input type='range' className='slider'></input>
+            <input type='range' className='sliderCss' value='0' />
           </div>
         </div>
       </div>

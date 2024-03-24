@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+  </head>
+  <body>
+    <main id="main" selector="main"></main>
+    <div id="root">
+      <div class="component flex justify-center bg-[#F7F7F7] ">
+        <div class="maxWidth flexCol flex-grow gap-4 ">
+          <div class="header">Details</div>
+          <div class="content">
+            <div class="flexCol gap-5">
+              <div class="detailsCard ">
+                <div class="flex justify-between">
+                  <div class="flexCol text-left">
+                    <div class="detailsCardTitle">Inv. Amount</div>
+                    <div class="detailsCardAmount">$100</div>
+                  </div>
+                  <div></div>
+                  <div class="flexCol text-right">
+                    <div class="detailsCardTitle">Return Amount</div>
+                    <div class="detailsCardAmount">$10000</div>
+                  </div>
+                </div>
+                <br class="" />
+                <div class="flex justify-between">
+                  <div class="flexCol text-left">
+                    <div class="detailsCardTitle">Returns (%)</div>
+                    <div class="detailsCardText">+17.45 %</div>
+                  </div>
+                  <div class="flexCol text-right">
+                    <div class="detailsCardTitle">1D Returns (%)</div>
+                    <div class="detailsCardText">+1.15 %</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="py-3 font-semibold">Specification</div>
+                <div class="grid grid-cols-2">
+                  <div class="flexCol gap-3 ">
+                    <div class="SpecificationItem ">
+                      <img src="./icons/dollar.svg" alt="" class="SpecificationCardIcon" />
+                      <div class="flexCol gap-0">
+                        <div class="SpecificationItemTitle">Inv. Amount</div>
+                        <div class="SpecificationItemValue">₹ 100.00</div>
+                      </div>
+                    </div>
+                    <div class="SpecificationItem ">
+                      <img src="./icons/clock.svg" alt="" class="SpecificationCardIcon" />
+                      <div class="flexCol gap-0">
+                        <div class="SpecificationItemTitle">For Timing</div>
+                        <div class="SpecificationItemValue">15 Days</div>
+                      </div>
+                    </div>
+                    <div class="SpecificationItem ">
+                      <img src="./icons/calendar.svg" alt="" class="SpecificationCardIcon" />
+                      <div class="flexCol gap-0">
+                        <div class="SpecificationItemTitle">Return Interval</div>
+                        <div class="SpecificationItemValue">Every Day</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flexCol gap-3 ">
+                    <div class="SpecificationItem ">
+                      <img src="./icons/return.svg" alt="" class="SpecificationCardIcon" />
+                      <div class="flexCol gap-0">
+                        <div class="SpecificationItemTitle">Total Returns (%)</div>
+                        <div class="SpecificationItemValue">+17.45 %</div>
+                      </div>
+                    </div>
+                    <div class="SpecificationItem ">
+                      <img src="./icons/return.svg" alt="" class="SpecificationCardIcon" />
+                      <div class="flexCol gap-0">
+                        <div class="SpecificationItemTitle">1D Returns (%)</div>
+                        <div class="SpecificationItemValue">+1.15 %</div>
+                      </div>
+                    </div>
+                    <div class="SpecificationItem ">
+                      <img src="./icons/clock.svg" alt="" class="SpecificationCardIcon" />
+                      <div class="flexCol gap-0">
+                        <div class="SpecificationItemTitle">Repeat Time</div>
+                        <div class="SpecificationItemValue">90 Times</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flexCenter w-full py-4">
+              <input type="range" class="sliderCss" value="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
