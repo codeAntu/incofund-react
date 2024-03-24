@@ -17,7 +17,7 @@
             <div class="flexCol gap-1">
               <div class="inputText">Deposit Amount</div>
               <div class="inputBox">
-                <input type="text" placeholder="Enter Deposit Amount" class="input" />
+                <input type="text" placeholder="Enter Deposit Amount" class="input" id="amount" />
               </div>
               <div class="text-sm font-medium text-black/30">Withdraw Amount: ₹15.00</div>
             </div>
@@ -87,5 +87,26 @@
         </div>
       </div>
     </div>
+    <script>
+      const amount = document.getElementById('amount')
+      const quickOptions = document.querySelectorAll('input[name="quick-opt"]')
+
+      quickOptions.forEach((option) => {
+        option.addEventListener('change', () => {
+          amount.value = option.id
+        })
+      })
+
+      amount.addEventListener('input', () => {
+        quickOptions.forEach((option) => {
+          option.checked = false
+        })
+      })
+      
+
+
+
+
+    </script>
   </body>
 </html>

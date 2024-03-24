@@ -390,7 +390,7 @@
   width: 0;
   background: red;
   border-radius: 150px;
-  box-shadow: -1000px 0px 0px 1000px #fc5f0f;
+  box-shadow: -1000px 0px 0px 1000px blue;
   /* transform: rotate(180deg); */
 }
 
