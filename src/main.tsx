@@ -33,7 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <Register /> */}
     {/* <Profile />    */}
     {/* <TaskSystem />  */}
-    {/* <Recharge />  */}
+    <Recharge />
     {/* <Withdraw /> */}
     {/* <VIPLevel /> */}
     {/* <MyTeam />  */}
@@ -51,6 +51,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <EnterCode /> */}
     {/* <AddBank /> */}
     {/* <Otp /> */}
-    <Details />
+    {/* <Details /> */}
   </React.StrictMode>,
 )

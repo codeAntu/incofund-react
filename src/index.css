@@ -347,10 +347,51 @@
   .detailsCardText {
     @apply text-balance  font-semibold text-[#35D49C];
   }
+  .SpecificationCard {
+    @apply flex flex-col gap-2 rounded-3xl border p-5 shadow-lg;
+  }
+  .SpecificationItem {
+    @apply flex items-center  gap-2;
+  }
+  .SpecificationItemTitle {
+    @apply text-sm font-semibold text-black/30;
+  }
+  .SpecificationItemValue {
+    @apply text-[15px] font-[650] text-black;
+  }
+  .SpecificationCardIcon {
+    @apply w-6;
+  }
+  .slider {
+    @apply sliderCss;
+  }
 }
 
 .animateFedIn {
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.sliderCss {
+  appearance: none;
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  /* background: #8766ff11; */
+  background-color: #fc5f0f;
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+.sliderCss::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 55px;
+  width: 0;
+  background: red;
+  border-radius: 150px;
+  box-shadow: -1000px 0px 0px 1000px #fc5f0f;
+  /* transform: rotate(180deg); */
 }
 
 @keyframes fadeIn {
