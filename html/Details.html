@@ -91,20 +91,32 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="flexCenter relative w-full py-4">
-              <div class="slidText">Slide to Invest</div>
-              <input type="range" class="sliderCss" value="0" />
-            </div> -->
+            <form action="" method="post" id="form">
+              <div class="flexCenter relative w-full py-4">
+                <div class="slidText">Slide to Invest</div>
+                <input type="range" class="sliderCss" value="0" id="slider" min="0" max="1000" />
+              </div>
+            </form>
 
-            <!-- for -> You were already invested
-              Just replace this Div  -->
-            <div class="flexCenter relative w-full py-4">
+            <!-- <div class="flexCenter relative w-full py-4">
               <div class="slidText text-xs">You were already invested disable</div>
               <input type="range" class="sliderDisabled" disabled value="0" />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
+    <script>
+      const slider = document.getElementById('slider')
+      const form = document.getElementById('form')
+
+      slider.addEventListener('input', (e) => {
+        const value = e.target.value
+        if (value >= 1000) {
+          e.target.disabled = true
+          form.submit()
+        }
+      })
+    </script>
   </body>
 </html>
