@@ -1060,7 +1060,7 @@ video {
 .detailsCard {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   border-radius: 20px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2207,6 +2207,9 @@ video {
 .border-black\/20 {
   border-color: #0003;
 }
+.border-black\/5 {
+  border-color: #0000000d;
+}
 .bg-\[\#F7F7F7\] {
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
@@ -2577,6 +2580,10 @@ video {
 }
 .leading-3 {
   line-height: 0.75rem;
+}
+.text-\[\#C7C0BC\] {
+  --tw-text-opacity: 1;
+  color: rgb(199 192 188 / var(--tw-text-opacity));
 }
 .text-\[\#FC5F0F\],
 .text-accent {

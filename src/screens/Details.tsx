@@ -6,18 +6,20 @@ export default function Details() {
         <div className='content'>
           <div className='flexCol gap-5'>
             <div className='detailsCard '>
-              <div className='flex justify-between'>
+              <div className='flex items-center justify-between'>
                 <div className='flexCol text-left'>
                   <div className='detailsCardTitle'>Inv. Amount</div>
-                  <div className='detailsCardAmount'>$100</div>
+                  <div className='detailsCardAmount text-[#C7C0BC]'>$100</div>
                 </div>
-                <div></div>
+                <div className=''>
+                  <img src='./icons/arrow.svg' alt='' className='w-8' />
+                </div>
                 <div className='flexCol text-right'>
                   <div className='detailsCardTitle'>Return Amount</div>
                   <div className='detailsCardAmount'>$10000</div>
                 </div>
               </div>
-              <br className='' />
+              <hr className='w-full border-black/5' />
               <div className='flex justify-between'>
                 <div className='flexCol text-left'>
                   <div className='detailsCardTitle'>Returns (%)</div>

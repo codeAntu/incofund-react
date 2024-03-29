@@ -336,7 +336,7 @@
   }
 
   .detailsCard {
-    @apply flex flex-col gap-2 rounded-[20px]  bg-[#fff] p-5;
+    @apply flex flex-col gap-4 rounded-[20px]  bg-[#fff] p-5;
   }
   .detailsCardTitle {
     @apply text-sm font-semibold opacity-30;
