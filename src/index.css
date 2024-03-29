@@ -369,6 +369,19 @@
   .slidText {
     @apply absolute select-none text-sm font-semibold text-white;
   }
+
+  .withDrawCard {
+    @apply flex flex-col gap-1 rounded-[20px] border-2 border-black/5 bg-accent/5 px-4 py-3;
+  }
+  .withDrawItems {
+    @apply grid grid-cols-2 justify-between gap-1.5;
+  }
+  .withDrawItemTitle {
+    @apply text-xs font-semibold text-black/30;
+  }
+  .withDrawItemValue {
+    @apply text-sm font-[650] text-black;
+  }
 }
 
 .animateFedIn {

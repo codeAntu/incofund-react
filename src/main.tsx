@@ -25,6 +25,7 @@ import EnterCode from './screens/EnterCode.tsx'
 import AddBank from './screens/AddBank.tsx'
 import Otp from './screens/Otp.tsx'
 import Details from './screens/Details.tsx'
+import WithdrawLog from './screens/WithdrawLog.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -51,6 +52,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <EnterCode /> */}
     {/* <AddBank /> */}
     {/* <Otp /> */}
-    <Details />
+    {/* <Details /> */}
+    <WithdrawLog />
   </React.StrictMode>,
 )
