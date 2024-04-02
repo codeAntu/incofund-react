@@ -26,6 +26,10 @@ import AddBank from './screens/AddBank.tsx'
 import Otp from './screens/Otp.tsx'
 import Details from './screens/Details.tsx'
 import WithdrawLog from './screens/WithdrawLog.tsx'
+import Maintenance from './screens/Maintenance.tsx'
+import Banned from './screens/Banned.tsx'
+import PaymentSuccess from './screens/PaymentSuccess.tsx'
+import History from './screens/History.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -37,7 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <Recharge /> */}
     {/* <Withdraw /> */}
     {/* <VIPLevel /> */}
-    {/* <MyTeam />  */}
+    {/* <MyTeam /> */}
     {/* <MyRecords /> */}
     {/* <MyCard /> */}
     {/* <SplashScreen /> */}
@@ -53,6 +57,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <AddBank /> */}
     {/* <Otp /> */}
     {/* <Details /> */}
-    <WithdrawLog />
+    {/* <WithdrawLog /> */}
+    {/* <EnterCode /> */}
+    {/* <Maintenance /> */}
+    {/* <Banned /> */}
+    <PaymentSuccess />
+    {/* <History /> */}
   </React.StrictMode>,
 )

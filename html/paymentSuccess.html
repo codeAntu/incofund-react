@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+  </head>
+  <body>
+    <button id="popUpBtn">Pop Up</button>
+    <div id="popUp" class="fixed left-0 top-0 z-30 hidden h-[100dvh] w-full items-center justify-center bg-black/20">
+      <div class="flex w-10/12 flex-col items-center gap-8 rounded-3xl border bg-white px-8 py-6 backdrop-blur-2xl">
+        <img src="./icons/success.png" alt="" class="w-24" />
+        <div class="flex flex-col items-center gap-1 text-center">
+          <div class="text-xl font-semibold" id="text">Success</div>
+          <div class="text-base font-semibold leading-tight text-black/40" id="message">Your payment is successful</div>
+        </div>
+        <div class="flex w-full flex-col items-center gap-3">
+          <button
+            class="w-full rounded-full bg-[#35D49C] px-14 py-3 text-sm font-medium text-white outline-none"
+            id="btn"
+          >
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const popUpBtn = document.getElementById('popUpBtn')
+      const popUp = document.getElementById('popUp')
+      const btn = document.getElementById('btn')
+
+      popUpBtn.onclick = popUpHandler
+      popUp.onclick = closePopUp
+      btn.onclick = () => {
+        closePopUp({ target: popUp })
+      }
+
+      function popUpHandler() {
+        popup()
+      }
+
+      function closePopUp(event) {
+        if (event.target === popUp) {
+          popUp.style.display = 'none'
+        }
+      }
+
+      function popup(options) {
+        document.getElementById('popUp').style.display = 'flex'
+      }
+    </script>
+  </body>
+</html>

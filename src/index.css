@@ -182,10 +182,10 @@
   }
 
   .level {
-    @apply rounded-full border border-accent bg-accent/5 px-5 py-1.5 text-center text-sm font-semibold text-accent;
+    @apply rounded-full border border-accent bg-accent/5 px-5 py-2 text-center text-sm font-semibold text-accent;
   }
   .levelSelected {
-    @apply rounded-full border border-accent bg-accent px-5 py-1.5 text-center text-sm font-semibold text-white;
+    @apply rounded-full border border-accent bg-accent px-5 py-2 text-center text-sm font-semibold text-white;
   }
 
   .recordCard {
@@ -381,6 +381,27 @@
   }
   .withDrawItemValue {
     @apply text-sm font-[650] text-black;
+  }
+  .reportCard {
+    @apply flex flex-col gap-4 rounded-2xl border border-accent bg-[#FEF7F2] px-2.5 py-3 text-base font-medium text-black/40;
+  }
+  .reportCardTitle {
+    @apply text-xs font-semibold text-black/40;
+  }
+  .status {
+    @apply flex items-center justify-center gap-1.5 rounded-full px-4 py-2 text-xs font-medium text-white;
+  }
+  .statusImg {
+    @apply w-5;
+  }
+  .pending {
+    @apply bg-[#FFD600];
+  }
+  .approved {
+    @apply bg-[#35D49C];
+  }
+  .rejected {
+    @apply bg-[#EE3838];
   }
 }
 
