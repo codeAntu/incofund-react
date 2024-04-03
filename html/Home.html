@@ -6,20 +6,38 @@
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <main id="main" selector="main"></main>
     <div id="root">
       <div class="component pb-24">
-        <div class="maxWidth flexCol gap-6">
+        <div class="maxWidth flexCol gap-4">
           <div class="headerContainer">
             <div class="header">
               <img src="./icons/appIcon.svg" alt="" class="w-20" />
             </div>
             <img src="./icons/appIcon.svg" alt="" class="profilePic" />
           </div>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide">
+                <img src="./icons/temp.png" alt="" class="swiper-img" />
+              </a>
+              <a class="swiper-slide">
+                <img src="./icons/temp.png" alt="" class="swiper-img" />
+              </a>
+              <a class="swiper-slide">
+                <img src="./icons/temp.png" alt="" class="swiper-img" />
+              </a>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
           <div class="flexCol fixed bottom-24 right-3 justify-center gap-0">
-            <div class="rounded-full  bg-[#FEE4D7] p-5">
+            <div class="rounded-full bg-[#FEE4D7] p-5">
               <img src="./icons/Check-In.svg" alt="" class="w-5" />
             </div>
             <button
@@ -154,7 +172,7 @@
               <div class="flexCenter w-44">
                 <img src="./icons/man.svg" alt="" class="object-" />
               </div>
-            </div>    
+            </div>
             <div>
               <button class="buttonRounded px-4">
                 <img src="./icons/download.svg" alt="" class="buttonIcon" />
@@ -183,5 +201,19 @@
         <div class="navText">Wallet</div>
       </a>
     </div>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 10,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      })
+    </script>
   </body>
 </html>

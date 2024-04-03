@@ -403,6 +403,12 @@
   .rejected {
     @apply bg-[#EE3838];
   }
+  .swiper {
+    @apply w-[100%];
+  }
+  .swiper-img {
+    @apply aspect-[2/1] h-full w-full rounded-3xl object-cover;
+  }
 }
 
 .animateFedIn {

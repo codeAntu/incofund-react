@@ -1220,6 +1220,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(238 56 56 / var(--tw-bg-opacity));
 }
+.swiper {
+  width: 100%;
+}
+.swiper-img {
+  aspect-ratio: 16/9;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 .sr-only {
   position: absolute;
   width: 1px;
