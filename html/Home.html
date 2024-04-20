@@ -61,14 +61,14 @@
                 <img src="./icons/robot.svg" alt="" class="" />
               </div>
             </div>
-            <div class="walletCard">
+            <div class="walletCard" id="walletCard_1">
               <div class="flex items-center justify-between">
                 <div>
-                  <div class="text-sm font-medium">wallet Balance</div>
+                  <div class="text-sm font-medium">Deposit Wallet</div>
                   <div class="text-3xl font-semibold text-accent">$ 2000.00</div>
                 </div>
-                <div>
-                  <img src="./icons/wallet3.svg" alt="" class="w-8" />
+                <div id="swap_1">
+                  <img src="./icons/swap.svg" alt="" class="w-8" />
                 </div>
               </div>
               <div class="flex gap-3">
@@ -84,66 +84,14 @@
                 </button>
               </div>
             </div>
-            <div class="inviteCard">
-              <div class="flexCol gap-4">
-                <div>Invite Friends and Earn 1500000</div>
-                <div>
-                  <button class="inviteCardBtn">Get more cash rewards</button>
-                </div>
-                <div>
-                  <button class="inviteCardBt2 flex-grow-0">Invite Now</button>
-                </div>
-              </div>
-              <div class="flexCenter w-44">
-                <img src="./icons/man.svg" alt="" class="object-" />
-              </div>
-            </div>
-            <div>
-              <button class="buttonRounded px-4">
-                <img src="./icons/download.svg" alt="" class="buttonIcon" />
-                <div>Get the application</div>
-              </button>
-            </div>
-          </div>
-          <div class="headerContainer">
-            <div class="header">
-              <img src="./icons/appIcon.svg" alt="" class="w-20" />
-            </div>
-            <img src="./icons/appIcon.svg" alt="" class="profilePic" />
-          </div>
-          <div class="flexCol fixed bottom-24 right-3 justify-center gap-0">
-            <div class="rounded-full bg-accent/10 p-5">
-              <img src="./icons/Check-In.svg" alt="" class="w-5" />
-            </div>
-            <button
-              class="absolute -bottom-2 left-px w-full rounded-full bg-accent px-1 py-0.5 text-[10px] font-semibold text-white"
-            >
-              check in
-            </button>
-          </div>
-          <div class="flexCol gap-5">
-            <div class="mitraCard">
-              <div class="mitraImgContainer">
-                <div class="mitraHeader">Say Hello to <span>MITRA</span></div>
-                <div class="mitraText">
-                  Redefine CX with powerful user- friendly robots that enhance engagement and capture crucial data.
-                </div>
-                <div class="">
-                  <button class="buttonRounded">Get Started</button>
-                </div>
-              </div>
-              <div class="w-44">
-                <img src="./icons/robot.svg" alt="" class="" />
-              </div>
-            </div>
-            <div class="walletCard">
+            <div class="walletCard hidden" id="walletCard_2">
               <div class="flex items-center justify-between">
                 <div>
-                  <div class="text-sm font-medium">wallet Balance</div>
-                  <div class="text-3xl font-semibold text-accent">$ 2000.00</div>
+                  <div class="text-sm font-medium">Withdraw Wallet</div>
+                  <div class="text-3xl font-semibold text-accent">$ 2500.00</div>
                 </div>
                 <div>
-                  <img src="./icons/wallet3.svg" alt="" class="w-8" />
+                  <img src="./icons/swap.svg" alt="" class="w-8" id="swap_2" />
                 </div>
               </div>
               <div class="flex gap-3">
@@ -213,6 +161,21 @@
         pagination: {
           el: '.swiper-pagination',
         },
+      })
+
+      const walletCard_1 = document.getElementById('walletCard_1')
+      const walletCard_2 = document.getElementById('walletCard_2')
+      const swap_1 = document.getElementById('swap_1')
+      const swap_2 = document.getElementById('swap_2')
+
+      swap_1.addEventListener('click', () => {
+        walletCard_1.style.display = 'none'
+        walletCard_2.style.display = 'flex'
+      })
+
+      swap_2.addEventListener('click', () => {
+        walletCard_1.style.display = 'flex'
+        walletCard_2.style.display = 'none'
       })
     </script>
   </body>

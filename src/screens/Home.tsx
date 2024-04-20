@@ -9,21 +9,20 @@ export default function Home() {
           <img src='./icons/appIcon.svg' alt='' className='profilePic ' />
         </div>
 
-        
-        <div className="swiper">
-            <div className="swiper-wrapper">
-              <a className="swiper-slide">
-                <img src="./icons/temp.png" alt="" className="swiper-img" />
-              </a>
-              <a className="swiper-slide">
-                <img src="./icons/temp.png" alt="" className="swiper-img" />
-              </a>
-              <a className="swiper-slide">
-                <img src="./icons/temp.png" alt="" className="swiper-img" />
-              </a>
-            </div>
-            <div className="swiper-pagination"></div>
+        <div className='swiper'>
+          <div className='swiper-wrapper'>
+            <a className='swiper-slide'>
+              <img src='./icons/temp.png' alt='' className='swiper-img' />
+            </a>
+            <a className='swiper-slide'>
+              <img src='./icons/temp.png' alt='' className='swiper-img' />
+            </a>
+            <a className='swiper-slide'>
+              <img src='./icons/temp.png' alt='' className='swiper-img' />
+            </a>
           </div>
+          <div className='swiper-pagination'></div>
+        </div>
 
         <div className='flexCol fixed bottom-24 right-3 justify-center gap-0 '>
           <div className='rounded-full bg-[#FEE4D7] p-5'>
@@ -57,7 +56,7 @@ export default function Home() {
                 <div className='text-3xl font-semibold text-accent'>$ 2000.00</div>
               </div>
               <div>
-                <img src='./icons/wallet3.svg' alt='' className='w-8' />
+                <img src='./icons/swap.svg' alt='' className='w-8' />
               </div>
             </div>
             <div className='flex gap-3'>

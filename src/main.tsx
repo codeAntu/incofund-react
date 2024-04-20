@@ -46,7 +46,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <MyCard /> */}
     {/* <SplashScreen /> */}
     {/* <Product /> */}
-    {/* <Home /> */}
+    <Home />
     {/* <Refer /> */}
     {/* <PopOver /> */}
     {/* <Nav /> */}
@@ -61,7 +61,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <EnterCode /> */}
     {/* <Maintenance /> */}
     {/* <Banned /> */}
-    <PaymentSuccess />
+    {/* <PaymentSuccess /> */}
     {/* <History /> */}
   </React.StrictMode>,
 )
