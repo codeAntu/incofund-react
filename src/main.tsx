@@ -33,35 +33,6 @@ import History from './screens/History.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/* <Test /> */}
-    {/* <Login /> */}
-    {/* <Register /> */}
-    {/* <Profile />    */}
-    {/* <TaskSystem />  */}
-    {/* <Recharge /> */}
-    {/* <Withdraw /> */}
-    {/* <VIPLevel /> */}
-    {/* <MyTeam /> */}
-    {/* <MyRecords /> */}
-    {/* <MyCard /> */}
-    {/* <SplashScreen /> */}
-    {/* <Product /> */}
-    <Home />
-    {/* <Refer /> */}
-    {/* <PopOver /> */}
-    {/* <Nav /> */}
-    {/* <Menu />  */}
-    {/* <ForgotPassword /> */}
-    {/* <UpdatePassword /> */}
-    {/* <EnterCode /> */}
-    {/* <AddBank /> */}
-    {/* <Otp /> */}
-    {/* <Details /> */}
-    {/* <WithdrawLog /> */}
-    {/* <EnterCode /> */}
-    {/* <Maintenance /> */}
-    {/* <Banned /> */}
-    {/* <PaymentSuccess /> */}
-    {/* <History /> */}
+   <Home />
   </React.StrictMode>,
 )
