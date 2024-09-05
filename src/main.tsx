@@ -30,9 +30,13 @@ import Maintenance from './screens/Maintenance.tsx'
 import Banned from './screens/Banned.tsx'
 import PaymentSuccess from './screens/PaymentSuccess.tsx'
 import History from './screens/History.tsx'
+import BankPayment from './screens/BankPayment.tsx'
+import QR from './screens/QR.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
    <Home />
+  <BankPayment />
+  <QR />
   </React.StrictMode>,
 )
